@@ -1599,3 +1599,14 @@ line-height: 25px;
 .specialstitle {
   margin-top: 50px;
 }
+.artistscardevent img{
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 25px;
+  filter: grayscale(0.6);
+  transition: 700ms;
+}
+.artistscardevent img:hover{
+  filter: grayscale(0);
+}
