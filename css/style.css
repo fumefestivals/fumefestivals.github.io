@@ -1105,6 +1105,13 @@ textarea.form-control {
   font-weight: 500;
   font-size: 30px;
   padding-left: 20px;
+  line-height: 23px;
+}
+.maylikeartist-single p{
+  color: #d3d3d3;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 21px;
 }
 .mayliketitle h2{
   color: #000;
@@ -1508,3 +1515,80 @@ footer .overlay-image {
   background: linear-gradient(37deg, rgb(101, 0, 114) 1%, rgb(46, 0, 132) 100%);
 }
 /*# sourceMappingURL=style.css.map */
+.eventsection {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/FRp7sYWc/ASP-79.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 60vh;
+}
+.eventsection h1 {
+  color: white;
+  padding-top: 300px;
+  padding-bottom: 50px;
+}
+.eventcontent {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.eventcontent h1 {
+  color: black;
+  padding-top: 20px;
+  font-size: 50px;
+}
+.eventcontent {
+  height: 30vh;
+}
+.eventcontent img{
+  height: 400px;
+  width: 500px;
+  object-fit: cover;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.eventcontent .section-border {
+  height: 9px;
+  width: 460px;
+  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
+  border-radius: 5px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+.eventcontent p2{
+  font-size: 16px;
+  line-height: 20px;
+}
+.eventcontent .eventdescription {
+  padding-top: 20px;
+}
+.ticketsbutton-soldout{
+  margin-top: 30px;
+}
+.ticketsbutton-soldout a{
+  color: #969696;
+  font-size: 12px;
+  background: linear-gradient(37deg, rgb(94, 94, 94) 1%, rgb(54, 54, 54) 100%);
+  padding: 12px 50px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.ticketsection {
+  padding-bottom: 40px;
+  background-color: #eeeeee;
+}
+.ticketsection h3{
+font-size: 20px;
+line-height: 25px;
+}
+.ticketsection .progress{
+  margin-bottom: 20px;
+  background-color: #7d7d7d;
+  }
+.ticketsectiontitle{
+  margin-top: 100px;
+  padding-top: 60px;
+}
+.bg-danger {
+  background-color: rgb(149, 0, 169) !important;
+}
