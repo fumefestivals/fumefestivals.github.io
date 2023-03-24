@@ -1592,3 +1592,10 @@ line-height: 25px;
 .bg-danger {
   background-color: rgb(149, 0, 169) !important;
 }
+.specials {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.specialstitle {
+  margin-top: 50px;
+}
