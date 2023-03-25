@@ -1561,17 +1561,28 @@ footer .overlay-image {
 .eventcontent .eventdescription {
   padding-top: 20px;
 }
-.ticketsbutton-soldout{
+.ticketsbutton{
   margin-top: 30px;
 }
-.ticketsbutton-soldout a{
+.ticketsbutton a{
   color: #969696;
   font-size: 12px;
   background: linear-gradient(37deg, rgb(94, 94, 94) 1%, rgb(54, 54, 54) 100%);
+  padding: 12px 40px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.ticketsbutton a2{
+  color: #fff;
+  font-size: 12px;
+  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   padding: 12px 50px;
   border-radius: 5px;
   font-weight: 600;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .ticketsection {
   padding-bottom: 40px;
@@ -1592,6 +1603,9 @@ line-height: 25px;
 .bg-danger {
   background-color: rgb(149, 0, 169) !important;
 }
+.bg-success {
+  background-color: rgb(90, 81, 0) !important;
+}
 .specials {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1609,4 +1623,8 @@ line-height: 25px;
 }
 .artistscardevent img:hover{
   filter: grayscale(0);
+}
+.ticketbeschreibung {
+  margin-top: 27px;
+  padding-bottom: 9px;
 }
