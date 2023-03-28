@@ -1588,6 +1588,7 @@ footer .overlay-image {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #eeeeee;
+  margin-bottom: 100px;
 }
 .ticketsection h3{
 font-size: 20px;
@@ -1641,7 +1642,7 @@ font-size: 20px;
   transition: 700ms;
 }
 .ticket-karte:hover {
-  filter:brightness(0.8);
+  filter:brightness(1.2);
   scale: 0.98;
 }
 .ticket-karte-vip {
@@ -1654,7 +1655,7 @@ font-size: 20px;
   margin-left: 10px;
 }
 .ticket-karte-vip:hover {
-  filter:brightness(0.8);
+  filter:brightness(1.2);
   scale: 0.98;
 }
 .ticket-titel h3{
@@ -1731,4 +1732,26 @@ font-size: 20px;
     rgba(0, 0, 0, 0.3) 10px,
     rgba(0, 0, 0, 0.3) 20px
   )
+}
+.offlineshops {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  min-height: 150px;
+
+}
+.btn-shopspromoter{
+  color: #fff;
+  background: linear-gradient(37deg, rgba(116, 0, 132, 0.788) 1%, rgba(47, 0, 135, 0.656) 100%);
+  font-size: 17px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 700ms;
+}
+
+.btn-shopspromoter:hover{
+  filter: brightness(0.9);
+  color:#fff;
+}
+.ortschaft-promoter {
+  margin-top: 50px;
 }
