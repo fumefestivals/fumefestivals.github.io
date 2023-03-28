@@ -1634,7 +1634,7 @@ font-size: 20px;
 .ticket-karte {
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   width: 260px;
-  height: 520px;
+  height: 490px;
   border-radius: 10px;
   margin-right: 10px;
   margin-left: 10px;
@@ -1647,7 +1647,7 @@ font-size: 20px;
 .ticket-karte-vip {
   background: linear-gradient(37deg, rgb(64, 50, 0) 10%, rgb(80, 73, 0) 100%);
   width: 260px;
-  height: 520px;
+  height: 490px;
   border-radius: 10px;
   transition: 700ms;
   margin-right: 10px;
