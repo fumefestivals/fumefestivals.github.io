@@ -1633,20 +1633,19 @@ footer .overlay-image {
   }
 }
 .ticketsection {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 50px;
   background-color: #eeeeee;
-  margin-bottom: 100px;
 }
 .ticketsection h3{
 font-size: 20px;
 }
 .specials {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background-color: #eeeeee;
 }
 .specials li{
   font-size: 17px;
+  background-color: transparent;
 }
 @media only screen and (max-width: 768px){
   .specials li{
@@ -1811,7 +1810,6 @@ font-size: 20px;
   )
 }
 .offlineshops {
-  margin-top: 30px;
   margin-bottom: 50px;
   min-height: 150px;
 
@@ -1908,4 +1906,64 @@ font-size: 20px;
 }
 .img-description img:hover{
   transform: scale(0.95);
+}
+CSS
+.custom-shape-divider-top-1680561536 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1680561536 svg {
+  position: relative;
+  display: block;
+  width: calc(208% + 1.3px);
+  height: 93px;
+}
+
+.custom-shape-divider-top-1680561536 .shape-fill {
+  fill: #fff;
+}
+CSS
+.custom-shape-divider-top-1680561536-grey {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1680561536-grey svg {
+  position: relative;
+  display: block;
+  width: calc(208% + 1.3px);
+  height: 93px;
+}
+
+.custom-shape-divider-top-1680561536-grey .shape-fill {
+  fill: #eeeeee;
+}
+.custom-shape-divider-bottom-1680562519 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680562519 svg {
+  position: relative;
+  display: block;
+  width: calc(208% + 1.3px);
+  height: 93px;
+}
+
+.custom-shape-divider-bottom-1680562519 .shape-fill {
+  fill: #FFFFFF;
 }
