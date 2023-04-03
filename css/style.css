@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #6c6c86;
+  overflow-x: hidden;
 }
 
 p {
@@ -718,10 +719,10 @@ a:hover {
   border-radius: 5px;
   margin: 10px auto 30px;
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 530px) {
   .section-border {
     height: 9px;
-    width: 200px;
+    width: 70%;
     background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
     border-radius: 5px;
     margin: 10px auto 30px;
@@ -1529,30 +1530,40 @@ footer .overlay-image {
 }
 .eventcontent {
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+}
+.eventcontent .section-border{
+  float: left;
+  width: 100%;
 }
 .eventcontent h1 {
   color: black;
   padding-top: 20px;
   font-size: 50px;
 }
-.eventcontent {
-  height: 30vh;
-}
 .eventcontent img{
   height: 400px;
   width: 500px;
   object-fit: cover;
-  padding-top: 20px;
-  padding-bottom: 50px;
 }
-.eventcontent .section-border {
-  height: 9px;
-  width: 460px;
-  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
-  border-radius: 5px;
-  margin-left: 0px;
-  margin-bottom: 10px;
+@media only screen and (max-width: 1199px){
+  .eventcontent img{
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 530px){
+  .eventcontent img{
+    height: 300px;
+    width: 360px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 425px){
+  .eventcontent img{
+    height: 300px;
+    width: 330px;
+    margin-top: 30px;
+  }
 }
 .eventcontent p2{
   font-size: 16px;
@@ -1560,6 +1571,7 @@ footer .overlay-image {
 }
 .eventcontent .eventdescription {
   padding-top: 20px;
+  max-width: 540px;
 }
 .ticketsbutton{
   margin-top: 30px;
@@ -1583,6 +1595,23 @@ footer .overlay-image {
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px){
+  .ticketsbutton a,
+  .ticketsbutton a2{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 425px){
+  .ticketsbutton a,
+  .ticketsbutton a2{
+    font-size: 11px;
+    padding: 12px 37px;
+    margin-right: 0px;
+  }
+  .eventcontent h1{
+    font-size: 35px;
+  }
 }
 .ticketsection {
   padding-top: 50px;
@@ -1623,13 +1652,10 @@ font-size: 20px;
   margin: 10px auto 30px;
   margin-bottom: 60px;
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 530px){
   .section-border-tickets {
+    width: 70%;
     height: 9px;
-    width: 200px;
-    background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
-    border-radius: 5px;
-    margin: 10px auto 30px;
   }
 }
 .ticket-karte {
@@ -1740,16 +1766,24 @@ font-size: 20px;
 
 }
 .btn-shopspromoter{
-  color: #fff;
   background: linear-gradient(37deg, rgba(116, 0, 132, 0.788) 1%, rgba(47, 0, 135, 0.656) 100%);
-  font-size: 17px;
   padding: 10px 30px;
+  margin: 1px;
   border-radius: 5px;
   transition: 700ms;
+  color: #fff;
+  cursor:pointer;
+}
+.btn-shopspromoter a{
+  font-weight: 300;
+  line-height: 1;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-shopspromoter:hover{
-  filter: brightness(0.9);
+  filter: brightness(0.8);
   color:#fff;
 }
 .ortschaft-promoter {
