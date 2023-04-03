@@ -276,6 +276,11 @@ a:hover {
   padding-top: 110px;
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 768px){
+  .moneyrainsection{
+    background-attachment: local;
+  }
+}
 .moneyrainsection .col {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1571,30 +1576,44 @@ footer .overlay-image {
 }
 .eventcontent .eventdescription {
   padding-top: 20px;
-  max-width: 540px;
 }
 .ticketsbutton{
   margin-top: 30px;
 }
-.ticketsbutton a{
+.button-offline-tickets{
   color: #969696;
-  font-size: 12px;
   background: linear-gradient(37deg, rgb(94, 94, 94) 1%, rgb(54, 54, 54) 100%);
   padding: 12px 40px;
   border-radius: 5px;
-  font-weight: 600;
-  margin-right: 20px;
-  text-transform: uppercase;
+  text-align: center;
+  transition: 300ms;
+  cursor: pointer;
 }
-.ticketsbutton a2{
+.button-online-tickets{
   color: #fff;
-  font-size: 12px;
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   padding: 12px 50px;
   border-radius: 5px;
-  font-weight: 600;
-  text-transform: uppercase;
+  text-align: center;
+  transition: 300ms;
   cursor: pointer;
+  margin-bottom: 5px;
+}
+.button-offline-tickets:hover,
+.button-online-tickets:hover{
+  transform: scale(0.95);
+}
+.button-online-tickets a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.button-offline-tickets a{
+  color: #c3c3c3;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
 }
 @media only screen and (max-width: 768px){
   .ticketsbutton a,
@@ -1626,6 +1645,30 @@ font-size: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.specials li{
+  font-size: 17px;
+}
+@media only screen and (max-width: 768px){
+  .specials li{
+    font-size: 14px;
+  } 
+}
+@media only screen and (max-width: 768px){
+  p{
+    font-size: 13px;
+  }
+  .eventdescription{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px){
+  .eventcontent p{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 450px){
+
+  }
 .specialstitle {
   margin-top: 50px;
 }
@@ -1708,6 +1751,14 @@ font-size: 20px;
   text-transform: capitalize;
   padding-top: 6px;
 }
+@media only screen and (max-width: 768px){
+  .ticket-karte{
+    transform: scale(0.9);
+  }
+  .ticket-karte-vip{
+    transform: scale(0.9);
+  }
+}
 .ticketsection .progress{
   background-color: #c1c1c1;
 }
@@ -1788,4 +1839,73 @@ font-size: 20px;
 }
 .ortschaft-promoter {
   margin-top: 50px;
+}
+.mainstage{
+  background: linear-gradient(37deg, rgba(18, 0, 20, 0.667) 1%, rgba(146, 0, 141, 0.656) 100%);
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.secondstage{
+  background: linear-gradient(37deg, rgba(0, 24, 55, 0.653) 1%, rgba(0, 75, 7, 0.699) 100%);
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px){
+  .mainstage,
+  .secondstage{
+    padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 450px){
+  .mainstage,
+  .secondstage{
+    padding: 10px 10px;
+  }
+}
+.mainstage h1,
+.secondstage h1{
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+.mainstage img,
+.secondstage img{
+  width: 140px;
+  height: 170px;
+  padding: 0px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 17px;
+  transition: 300ms;
+  filter: grayscale(0.5);
+}
+.mainstage img:hover,
+.secondstage img:hover{
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+.lineup-dj p{
+  color: white;
+  font-weight: 500;
+  line-height: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+}
+.lineup-dj{
+  padding-bottom: 10px;
+  width: 140px;
+}
+.img-description img{
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 300ms;
+}
+.img-description img:hover{
+  transform: scale(0.95);
 }
