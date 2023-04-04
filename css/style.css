@@ -1065,34 +1065,97 @@ textarea.form-control {
   background-attachment: fixed;
   position: relative;
 }
-.bannerartist-detail img{
-  width: 700px;
-  height: 500px;
-  object-fit: cover;
-  padding-right: 20px;
-}
-.bannerartist-detail h2{
-  color: #fff;
-  font-size: 160px;
-}
 .bannerartist-detail p{
   color: #fff;
 }
 .artistheader {
-  padding-top: 100px;
+  padding-top: 10vh;
+}
+.artistheaderimage{
+  width: 100%;
+}
+.artistheaderimage img{
+  width: 100%;
+  max-height: 430px;
+  object-fit: cover;
+}
+.artistheader-name{
+}
+.artistheader-name h2{
+  color: #fff;
+  font-size: 160px;
+}
+@media only screen and (max-width: 450px){
+  .artistheader-name h2{
+    font-size: 100px;
+  }
 }
 .artistbio {
   margin-top: 15vh;
   margin-bottom: 15vh;
 }
-.artistbio a{
+.artisticons{
+  padding-top: 5px;
+  max-width: 100%;
+}
+.artistbio .artistbioimage{
+
+  max-width: 100%;
+}
+.artistbio .artistbioimage img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.artistbio .artist-socialmedia {
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
-  padding: 10px 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 3px;
+  }
+.artistbio .artist-socialmedia i{
+  color: #ffffff;
   font-size: 30px;
 }
-.artistbio img{
-  width: 400px;
-  margin-bottom: 30px;
+@media only screen and (max-width: 1199px){
+  .artistbio .artist-socialmedia {
+    width: 50px;
+    height: 50px;
+    }
+}
+@media only screen and (max-width: 991px){
+  .artistbio .artist-socialmedia {
+    width: 40px;
+    height: 40px;
+    }
+    .artistbio .artist-socialmedia i{
+      font-size: 20px;
+    }
+}
+@media only screen and (max-width: 767px){
+  .artistbio .artist-socialmedia {
+    width: 80px;
+    height: 80px;
+    }
+    .artistbio .artist-socialmedia i{
+      font-size: 35px;
+    }
+}
+@media only screen and (max-width: 450px){
+  .artistbio .artist-socialmedia {
+    width: 60px;
+    height: 60px;
+    }
+    .artistbio .artist-socialmedia i{
+      font-size: 30px;
+    }
+}
+.artistibiodescription{
+  width: 100%;
+  text-align: justify;
+}
+.artistbiodescription p{
+  text-align: justify;
 }
 .maylikeartists{
   margin-bottom: 50px;
