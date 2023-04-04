@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #6c6c86;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 p {
@@ -1527,6 +1527,7 @@ footer .overlay-image {
   background-attachment: fixed;
   position: relative;
   height: 60vh;
+  overflow-x: hidden !important;
 }
 .eventcontent {
   margin-top: 50px;
@@ -1630,6 +1631,7 @@ footer .overlay-image {
 .ticketsection {
   margin-top: 50px;
   background-color: #eeeeee;
+  overflow-x: hidden !important;
 }
 .ticketsection h3{
 font-size: 20px;
@@ -1637,6 +1639,7 @@ font-size: 20px;
 .specials {
   padding-bottom: 50px;
   background-color: #eeeeee;
+  overflow-x: hidden !important;
 }
 .specials li{
   font-size: 17px;
@@ -1812,6 +1815,7 @@ font-size: 20px;
 .offlineshops {
   margin-bottom: 50px;
   min-height: 150px;
+  overflow-x: hidden !important;
 
 }
 .btn-shopspromoter{
@@ -1999,6 +2003,7 @@ CSS
   background-color: #eeee;
   align-items: center;
   width: 100%;
+  overflow-x: hidden !important;
 }
 .partners img{
   width: 200px;
@@ -2011,4 +2016,7 @@ CSS
   .partners img{
   width: 150px;
 }
+}
+.eventartists{
+  overflow-x: hidden !important;
 }
