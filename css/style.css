@@ -1231,7 +1231,8 @@ padding-top: 13vh;
 }
 .artistplayedevent {
   background-color:#000000 ;
-  width: 100px;
+  width: 100%;
+  min-width: 100px;
   height: 20px;
   border-radius: 5px;
   margin-bottom: 3px;
