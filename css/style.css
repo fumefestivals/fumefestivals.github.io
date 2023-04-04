@@ -1995,3 +1995,20 @@ CSS
     padding-top: 27vh;
   }
 }
+.partners {
+  background-color: #eeee;
+  align-items: center;
+  width: 100%;
+}
+.partners img{
+  width: 200px;
+  transition: 300ms;
+}
+.partners img:hover{
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 450px){
+  .partners img{
+  width: 150px;
+}
+}
