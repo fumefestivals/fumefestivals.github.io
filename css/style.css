@@ -1528,11 +1528,6 @@ footer .overlay-image {
   position: relative;
   height: 60vh;
 }
-.eventsection h1 {
-  color: white;
-  padding-top: 300px;
-  padding-bottom: 50px;
-}
 .eventcontent {
   margin-top: 50px;
   margin-bottom: 40px;
@@ -1645,7 +1640,12 @@ font-size: 20px;
 }
 .specials li{
   font-size: 17px;
+  cursor: default;
   background-color: transparent;
+  transition: 300ms;
+}
+.specials li:hover{
+  transform: scale(1.05);
 }
 @media only screen and (max-width: 768px){
   .specials li{
@@ -1966,4 +1966,32 @@ CSS
 
 .custom-shape-divider-bottom-1680562519 .shape-fill {
   fill: #FFFFFF;
+}
+.event-title{
+  padding-top: 20vh;
+}
+.event-title h4{
+  color: white;
+  cursor: default;
+  transition: 700ms;
+}
+.event-title h1 {
+  color: white;
+  text-transform: uppercase;
+  cursor: default;
+  transition: 700ms;
+}
+.event-title:hover h1{
+  transform: scale(1.1);
+  letter-spacing: 5px;
+  color: #af6cb8;
+}
+.event-title:hover h4{
+  transform: scale(0.95);
+  color: #6cafb8;
+}
+@media only screen and (max-width: 768px){
+  .event-title{
+    padding-top: 27vh;
+  }
 }
