@@ -25,7 +25,8 @@
   <link rel="stylesheet" href="plugins/venobox/venobox.css">
   <!-- card slider -->
   <link rel="stylesheet" href="plugins/card-slider/css/style.css">
-
+  <!-- fade animat -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
   
@@ -35,7 +36,7 @@
 
 </head>
 
-<body>
+<body data-aos="fade-in" data-aos-duration="1000" data-aos-once='true'>
   
 
   <header class="navigation fixed-top">
@@ -90,72 +91,42 @@
   </div>
 </section>
 <!-- /banner -->
-<div class="artiststitle">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h2>All Artists</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-        <div class="section-border"></div>
+<section class="sectionartists-details" data-aos="fade-up" data-aos-duration="1000" data-aos-once='true'>
+  <div class="artiststitle">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <h2>All Artists</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+          <div class="section-border"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="row artistscard justify-content-center">
+    <div class="col-xl-4 col-6">
+      <div class="artistselectioncard">
+        <a href="./artists/liaze.html"><img src="https://i.postimg.cc/sgDc2MFW/Snapinsta-app-1080-329073412-493050506136098-4656628602624657893-n.jpg"></a>
+      </div>
+    </div>
+    <div class="col-xl-4 col-6">
+      <div class="artistselectioncard">
+      <a><img src="https://i.postimg.cc/4ykrVffG/Felice-Pb.jpg"></a>
+      </div>
+    </div>
+    <div class="col-xl-4 col-6">
+      <div class="artistselectioncard">
+      <a><img src="https://i.postimg.cc/52MZ6NPS/Dan-Lee-PB.jpg"></a>
+      </div>
+    </div>
+    <div class="col-xl-4 col-6">
+      <div class="artistselectioncard">
+      <a><img src="https://i.postimg.cc/52MZ6NPS/Dan-Lee-PB.jpg"></a>
       </div>
     </div>
   </div>
 </div>
-<section class="sectionartists-details">
-<div class="container">
-  <div class="row artistscard justify-content-center">
-    <div class="col-4">
-      <a href="./artists/liaze.html"><img src="https://i.postimg.cc/sgDc2MFW/Snapinsta-app-1080-329073412-493050506136098-4656628602624657893-n.jpg"></a>
-    </div>
-    <div class="col-4">
-      <a><img src="https://i.postimg.cc/4ykrVffG/Felice-Pb.jpg"></a>
-    </div>
-    <div class="col-4">
-      <a><img src="https://i.postimg.cc/52MZ6NPS/Dan-Lee-PB.jpg"></a>
-    </div>
-    <div class="pw-100">
-      <div class="container">
-        <div class="row artistscard justify-content-center">
-          <div class="col-4">
-            <a><img src="https://i.postimg.cc/FscxcG1f/Subsurface-Presspic-1-red.jpg"></a>
-          </div>
-          <div class="col-4">
-            <a><img src="https://i.postimg.cc/ydnNrZ2n/Abstrakt-PD.jpg"></a>
-          </div>
-          <div class="col-4">
-            <a><img src="https://i.postimg.cc/1tRQNW24/Whynot-PB.jpg"></a>
-          </div>
-        </div>
-    </div>
-    <div class="pw-100">
-      <div class="container">
-        <div class="row artistscard justify-content-center">
-          <div class="col-4">
-           <a><img src="https://i.postimg.cc/nzYdvk3Y/Profile-Pic.jpg"></a>
-          </div>
-          <div class="col-4">
-            <a><img src="https://i.postimg.cc/CM3XdHJq/Ave-Pb.jpg"></a>
-          </div>
-          <div class="col-4">
-            <a><img src="https://i.postimg.cc/pL18kHGt/RISSI.jpg"></a>
-          </div>
-        </div>
-    </div>
-    <div class="pw-100">
-      <div class="container">
-        <div class="row artistscard justify-content-center">
-          <div class="col-4">
-            <a><img src="https://i.postimg.cc/YCLkyvQR/Carrot-Junkies-PB.jpg"></a>
-          </div>
-          <div class="col-4">
-            <a><img src="https://i.postimg.cc/8CdMBDVG/Dj-Pat-PB.jpg"></a>
-          </div>
-          <div class="col-4">
-            <a><img src="https://i.postimg.cc/Xq5mrn5d/Snapinsta-app-1080-317363509-1200917353837955-3250530072399595758-n.jpg"></a>
-          </div>
-        </div>
-    </div>
-  </div>
 
 </div>
 </div>
@@ -237,6 +208,10 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
