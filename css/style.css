@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Poppins:300,400,500,600,700&display=swap");
+html{
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1.2;
   font-family: "Poppins", sans-serif;
@@ -1738,13 +1741,16 @@ footer .overlay-image {
   margin-top: 30px;
 }
 .button-offline-tickets{
-  color: #969696;
-  background: linear-gradient(37deg, rgb(94, 94, 94) 1%, rgb(54, 54, 54) 100%);
+  color: #ffff;
+  text-transform: uppercase;
+  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   padding: 12px 40px;
   border-radius: 5px;
   text-align: center;
   transition: 300ms;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
 }
 .button-online-tickets{
   color: #fff;
@@ -1760,17 +1766,18 @@ footer .overlay-image {
 .button-online-tickets:hover{
   transform: scale(0.95);
 }
-.button-online-tickets a {
+.button-online-tickets a{
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
 }
 .button-offline-tickets a{
-  color: #c3c3c3;
+  color: #fff;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
+  width: 100%;
 }
 @media only screen and (max-width: 768px){
   .ticketsbutton a,
@@ -1981,12 +1988,13 @@ font-size: 20px;
 }
 .btn-shopspromoter{
   background: linear-gradient(37deg, rgba(116, 0, 132, 0.788) 1%, rgba(47, 0, 135, 0.656) 100%);
-  padding: 10px 30px;
+  padding: 10px 60px;
   margin: 1px;
   border-radius: 5px;
   transition: 700ms;
   color: #fff;
   cursor:pointer;
+  border: 0px;
 }
 .btn-shopspromoter a{
   font-weight: 300;
@@ -2167,8 +2175,8 @@ CSS
   overflow-x: hidden !important;
 }
 .partners img{
-  max-width: 150px;
-  max-height: 50px;
+  max-width: 100px;
+  padding: 10px;
   transition: 300ms;
   margin-bottom: 50px;
 }

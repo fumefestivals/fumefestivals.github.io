@@ -128,15 +128,8 @@
       </div>
       <div class="ticketsbutton">
         <div class="row">
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-            <div class="button-online-tickets">
-              <a href="#">Online Tickets</a> 
-            </div>
-          </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-            <div class="button-offline-tickets">
-              <a href="#">Offline Tickets</a>
-            </div>
+          <div class="col-xl-12 col-xl-12 col-lg-12 col-12">
+            <a href="#offlineshops"><div class="button-offline-tickets">Offline Tickets</div></a>
           </div>
         </div>
       </div>
@@ -162,7 +155,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
-          <h2>Online Tickets</h2>
+          <h2>Ticket Status</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
           <div class="section-border-tickets"></div>
         </div>
@@ -309,7 +302,7 @@
     </div>
   </div>
 </section>
-<section class="offlineshops">
+<section class="offlineshops" id="offlineshops">
   <div class="custom-shape-divider-top-1680561536-grey">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -330,267 +323,129 @@
     </div>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-        <div data-toggle="collapse" href="#vinschgau" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-shopspromoter">
-          <a>Vinschgau</a>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header justify-content-center d-flex" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn-shopspromoter" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <a>Vinschgau</a>
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row text-center">
+              <div class="col">
+                <h3>
+                  Promoter
+                </h3>
+               <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
+               <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
+               <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
+               <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
+               <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
+               <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
+               <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
+              </div>
+              <div class="col">
+                <h3>
+                  Shops
+                </h3>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+  
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-        <div data-toggle="collapse" href="#burggrafenamt" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-shopspromoter">
-          <a>Burggrafenamt</a>
+      <div class="card">
+        <div class="card-header justify-content-center d-flex" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn-shopspromoter" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <a>Burggrafenamt</a>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row d-flex text-center">
+              <div class="col">
+                <h3>
+                  Promoter
+                </h3>
+               <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
+               <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
+               <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
+               <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
+               <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
+               <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
+               <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
+              </div>
+              <div class="col">
+                <h3>
+                  Shops
+                </h3>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+  
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-        <div data-toggle="collapse" href="#kalterneppan" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-shopspromoter">
-          <a>Kaltern/Eppan</a>
+      <div class="card">
+        <div class="card-header justify-content-center d-flex" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn-shopspromoter" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             <a>Kaltern / Eppan</a>
+            </button>
+          </h5>
         </div>
-      </div>
-      <div class="col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-        <div data-toggle="collapse" href="#eisacktal" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-shopspromoter">
-          <a>Eisacktal</a>
-        </div>
-      </div>
-      <div class="col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-        <div data-toggle="collapse" href="#pustertal" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-shopspromoter">
-          <a>Pustertal</a>
-        </div>
-      </div>
-      <div class="col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-        <div data-toggle="collapse" href="#bozen" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn-shopspromoter">
-          <a>Bozen</a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row d-flex text-center">
+              <div class="col">
+                <h3>
+                  Promoter
+                </h3>
+               <a href="#" target="_blank"><p>@Eppankollege</p></a>
+               <a href="#" target="_blank"><p>@Eppankollege</p></a>
+               <a href="#" target="_blank"><p>@Eppankollege</p></a>
+               <a href="#" target="_blank"><p>@Eppankollege</p></a>
+               <a href="#" target="_blank"><p>@Eppankollege</p></a>
+               <a href="#" target="_blank"><p>@Eppankollege</p></a>
+               <a href="#" target="_blank"><p>@Eppankollege</p></a>
+              </div>
+              <div class="col">
+                <h3>
+                  Shops
+                </h3>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+                <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
+  
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="ortschaft-promoter">
-
-      <div class="collapse" id="vinschgau">
-        <div class="card card-body">
-          <div class="container d-flex justify-content-center ortschaftname">
-            <h3>
-              Vinschgau
-            </h3>
-          </div>
-          <div class="row d-flex text-center">
-            <div class="col">
-              <h3>
-                Promoter
-              </h3>
-             <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
-             <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
-             <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
-             <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
-             <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
-             <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
-             <a href="#" target="_blank"><p>@Vinschgerkollege</p></a>
-            </div>
-            <div class="col">
-              <h3>
-                Shops
-              </h3>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="collapse" id="burggrafenamt">
-        <div class="card card-body">
-          <div class="container d-flex justify-content-center ortschaftname">
-            <h3>
-              Burggrafenamt
-            </h3>
-          </div>
-          <div class="row d-flex text-center">
-            <div class="col">
-              <h3>
-                Promoter
-              </h3>
-             <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
-             <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
-             <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
-             <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
-             <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
-             <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
-             <a href="#" target="_blank"><p>@Burggrafenamt</p></a>
-            </div>
-            <div class="col">
-              <h3>
-                Shops
-              </h3>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="collapse" id="kalterneppan">
-        <div class="card card-body">
-          <div class="container d-flex justify-content-center ortschaftname">
-            <h3>
-              Kaltern / Eppan
-            </h3>
-          </div>
-          <div class="row d-flex text-center">
-            <div class="col">
-              <h3>
-                Promoter
-              </h3>
-             <a href="#" target="_blank"><p>@Eppankollege</p></a>
-             <a href="#" target="_blank"><p>@Eppankollege</p></a>
-             <a href="#" target="_blank"><p>@Eppankollege</p></a>
-             <a href="#" target="_blank"><p>@Eppankollege</p></a>
-             <a href="#" target="_blank"><p>@Eppankollege</p></a>
-             <a href="#" target="_blank"><p>@Eppankollege</p></a>
-             <a href="#" target="_blank"><p>@Eppankollege</p></a>
-            </div>
-            <div class="col">
-              <h3>
-                Shops
-              </h3>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="collapse" id="eisacktal">
-        <div class="card card-body">
-          <div class="container d-flex justify-content-center ortschaftname">
-            <h3>
-              Eisacktal
-            </h3>
-          </div>
-          <div class="row d-flex text-center">
-            <div class="col">
-              <h3>
-                Promoter
-              </h3>
-             <a href="#" target="_blank"><p>@Eisackkollege</p></a>
-             <a href="#" target="_blank"><p>@Eisackkollege</p></a>
-             <a href="#" target="_blank"><p>@Eisackkollege</p></a>
-             <a href="#" target="_blank"><p>@Eisackkollege</p></a>
-             <a href="#" target="_blank"><p>@Eisackkollege</p></a>
-             <a href="#" target="_blank"><p>@Eisackkollege</p></a>
-             <a href="#" target="_blank"><p>@Eisackkollege</p></a>
-            </div>
-            <div class="col">
-              <h3>
-                Shops
-              </h3>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="collapse" id="pustertal">
-        <div class="card card-body">
-          <div class="container d-flex justify-content-center ortschaftname">
-            <h3>
-              Pustertal
-            </h3>
-          </div>
-          <div class="row d-flex text-center">
-            <div class="col">
-              <h3>
-                Promoter
-              </h3>
-             <a href="#" target="_blank"><p>@Pustrerkollege</p></a>
-             <a href="#" target="_blank"><p>@Pustrerkollege</p></a>
-             <a href="#" target="_blank"><p>@Pustrerkollege</p></a>
-             <a href="#" target="_blank"><p>@Pustrerkollege</p></a>
-             <a href="#" target="_blank"><p>@Pustrerkollege</p></a>
-             <a href="#" target="_blank"><p>@Pustrerkollege</p></a>
-             <a href="#" target="_blank"><p>@Pustrerkollege</p></a>
-            </div>
-            <div class="col">
-              <h3>
-                Shops
-              </h3>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="collapse" id="bozen">
-        <div class="card card-body">
-          <div class="container d-flex justify-content-center ortschaftname">
-            <h3>
-              Bozen
-            </h3>
-          </div>
-          <div class="row d-flex text-center">
-            <div class="col">
-              <h3>
-                Promoter
-              </h3>
-             <a href="#" target="_blank"><p>@Boznerkollege</p></a>
-             <a href="#" target="_blank"><p>@Boznerkollege</p></a>
-             <a href="#" target="_blank"><p>@Boznerkollege</p></a>
-             <a href="#" target="_blank"><p>@Boznerkollege</p></a>
-             <a href="#" target="_blank"><p>@Boznerkollege</p></a>
-             <a href="#" target="_blank"><p>@Boznerkollege</p></a>
-             <a href="#" target="_blank"><p>@Boznerkollege</p></a>
-            </div>
-            <div class="col">
-              <h3>
-                Shops
-              </h3>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-              <a href="#" target="_blank"><p>@Haus der Klauses</p></a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  </div>
 </section>
 <section class="specials">
   <div class="custom-shape-divider-top-1680561536">
@@ -614,7 +469,7 @@
   </div>
   <div class="container">
     <ul class="list-group list-group-flush">
-      <li class="list-group-item" data-aos="fade-right" data-aos-duration="1000" data-aos-once='true'><i class="fa-solid fa-money-bill"> &nbsp;</i>Moneyrain Charity</li>
+      <li class="list-group-item" data-aos="fade-right" data-aos-duration="1000" data-aos-once='true'><i class="fa-solid fa-headphones"> &nbsp;</i>Silent Disco</li>
       <li class="list-group-item" data-aos="fade-right" data-aos-duration="1000" data-aos-once='true'><i class="fa-solid fa-smog"></i> &nbsp;Co2 Canons</li>
       <li class="list-group-item" data-aos="fade-right" data-aos-duration="1000" data-aos-once='true'><i class="fa-solid fa-asterisk"></i> &nbsp;Confetti</li>
       <li class="list-group-item" data-aos="fade-right" data-aos-duration="1000" data-aos-once='true'><i class="fa-solid fa-music"></i>  &nbsp;National and international Djs</li>
@@ -648,81 +503,81 @@
           <h1>Main Stage</h1>
           <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="row">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
-                    <a href="../artists/liaze.html"><img src="https://i.postimg.cc/sgDc2MFW/Snapinsta-app-1080-329073412-493050506136098-4656628602624657893-n.jpg" alt="liaze"></a>
-                    <p>Liaze</p>
+                    <a><img src="https://i.postimg.cc/1XSw-gZ3c/Snapinsta-app-334429774-614815533819004-4086701018356491831-n-1080.jpg" alt="Nic Johnston"></a>
+                    <p>Nic Johnston</p>
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/4ykrVffG/Felice-Pb.jpg" alt="Felice"></a>
-                    <p>Felice</p>
+                    <a><img src="https://i.postimg.cc/FscxcG1f/Subsurface-Presspic-1-red.jpg" alt="Subsurface"></a>
+                    <p>Subsurface</p>
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/52MZ6NPS/Dan-Lee-PB.jpg" alt="dan-lee"></a>
-                    <p>Dan Lee</p>
+                    <a><img src="https://i.postimg.cc/bYFqN9Vd/Snapinsta-app-345141132-183820764569846-1208101062725518623-n-1080.jpg" alt="Lusi De Mark"></a>
+                    <p>Luis de Mark</p>
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
                     <a><img src="https://i.postimg.cc/CM3XdHJq/Ave-Pb.jpg" alt="ave"></a>
                     <p>Ave</p>
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
                     <a><img src="https://i.postimg.cc/nzYdvk3Y/Profile-Pic.jpg" alt="sotschi"></a>
                     <p>Sotschi</p>
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/pL18kHGt/RISSI.jpg" alt="rissi"></a>
-                    <p>Rissi</p>
+                    <a><img src="https://i.postimg.cc/Wz7Wz8Tz/Snapinsta-app-249122428-142952538061053-7684131075081228009-n-1080.jpg" alt="ryzmo"></a>
+                    <p>Ryzmo</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
             <div class="row">
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                 <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/sgDc2MFW/Snapinsta-app-1080-329073412-493050506136098-4656628602624657893-n.jpg" alt="liaze"></a>
-                  <p>Liaze</p>
+                  <a><img src="https://i.postimg.cc/1XSw-gZ3c/Snapinsta-app-334429774-614815533819004-4086701018356491831-n-1080.jpg" alt="Nic Johnston"></a>
+                  <p>Nic Johnston</p>
                 </div>
               </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                 <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/4ykrVffG/Felice-Pb.jpg" alt="Felice"></a>
-                  <p>Felice</p>
+                  <a><img src="https://i.postimg.cc/FscxcG1f/Subsurface-Presspic-1-red.jpg" alt="Subsurface"></a>
+                  <p>Subsurface</p>
                 </div>
               </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                 <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/52MZ6NPS/Dan-Lee-PB.jpg" alt="dan-lee"></a>
-                  <p>Dan Lee</p>
+                  <a><img src="https://i.postimg.cc/bYFqN9Vd/Snapinsta-app-345141132-183820764569846-1208101062725518623-n-1080.jpg" alt="Lusi De Mark"></a>
+                  <p>Luis de Mark</p>
                 </div>
               </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                 <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/Xq5mrn5d/Snapinsta-app-1080-317363509-1200917353837955-3250530072399595758-n.jpg" alt="solestic"></a>
-                  <p>Solestic</p>
+                  <a><img src="https://i.postimg.cc/9QP3Tdbd/Snapinsta-app-335867406-863685661394767-1076978208410978282-n-1080.jpg" alt="cartado"></a>
+                  <p>Cartado</p>
                 </div>
               </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                 <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/pL18kHGt/RISSI.jpg" alt="Late Dan"></a>
-                  <p>Late Dan</p>
+                  <a><img src="https://i.postimg.cc/LXGRvH1L/Snapinsta-app-339519458-181566890937869-309629782336558277-n-1080.jpg" alt="fury"></a>
+                  <p>Fury</p>
                 </div>
               </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                 <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/pL18kHGt/RISSI.jpg" alt="rissi"></a>
-                  <p>Forrowheads</p>
+                  <a><img src="https://i.postimg.cc/FHFRYHgH/Hopex.jpg" alt="hopex"></a>
+                  <p>Hopex</p>
                 </div>
               </div>
             </div>
@@ -731,86 +586,32 @@
         </div>
         <div class="secondstage text-right" data-aos="fade-left" data-aos-duration="1000" data-aos-once='true'>
           <h1>Second Stage</h1>
-          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-item active">
               <div class="row">
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/sgDc2MFW/Snapinsta-app-1080-329073412-493050506136098-4656628602624657893-n.jpg" alt="liaze"></a>
-                    <p>Liaze</p>
+                    <a><img src="https://i.postimg.cc/wTvZ3KRd/Snapinsta-app-344556759-184922844459077-3097551970347086611-n-1024.jpg" alt="tommy natter"></a>
+                    <p>Tommy Natter</p>
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/4ykrVffG/Felice-Pb.jpg" alt="Felice"></a>
-                    <p>Felice</p>
+                    <a><img src="https://i.postimg.cc/bYC8m9Qp/Snapinsta-app-120541560-124005895867467-7430449222727349180-n-1080.jpg" alt="dj speedy"></a>
+                    <p>Dj Speedy</p>
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/52MZ6NPS/Dan-Lee-PB.jpg" alt="dan-lee"></a>
-                    <p>Dan Lee</p>
+                    <a><img src="https://i.postimg.cc/XvGQ03Ps/Flyment.jpg" alt="Flyment"></a>
+                    <p>Flyment</p>
                   </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 justify-content-center d-flex">
                   <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/CM3XdHJq/Ave-Pb.jpg" alt="ave"></a>
-                    <p>Ave</p>
-                  </div>
-                </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-                  <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/nzYdvk3Y/Profile-Pic.jpg" alt="sotschi"></a>
-                    <p>Sotschi</p>
-                  </div>
-                </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-                  <div class="lineup-dj">
-                    <a><img src="https://i.postimg.cc/pL18kHGt/RISSI.jpg" alt="rissi"></a>
-                    <p>Rissi</p>
+                    <a><img src="https://i.postimg.cc/qBSBkGgQ/Snapinsta-app-160018864-2778336252382188-3263881147705217575-n-1080.jpg" alt="Mirko Ventura"></a>
+                    <p>Mirko Ventura</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-            <div class="row">
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-                <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/sgDc2MFW/Snapinsta-app-1080-329073412-493050506136098-4656628602624657893-n.jpg" alt="liaze"></a>
-                  <p>Liaze</p>
-                </div>
-              </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-                <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/4ykrVffG/Felice-Pb.jpg" alt="Felice"></a>
-                  <p>Felice</p>
-                </div>
-              </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-                <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/52MZ6NPS/Dan-Lee-PB.jpg" alt="dan-lee"></a>
-                  <p>Dan Lee</p>
-                </div>
-              </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-                <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/Xq5mrn5d/Snapinsta-app-1080-317363509-1200917353837955-3250530072399595758-n.jpg" alt="solestic"></a>
-                  <p>Solestic</p>
-                </div>
-              </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-                <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/pL18kHGt/RISSI.jpg" alt="Late Dan"></a>
-                  <p>Late Dan</p>
-                </div>
-              </div>
-              <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-                <div class="lineup-dj">
-                  <a><img src="https://i.postimg.cc/pL18kHGt/RISSI.jpg" alt="rissi"></a>
-                  <p>Forrowheads</p>
-                </div>
-              </div>
-            </div>
             </div>
           </div>
           </div>
@@ -842,33 +643,38 @@
           <div class="section-border"></div>
         </div>
       </div>
-      <div class="row align-items-center">
-        <div class="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+      <div class="row align-items-center justify-content-center d-flex">
+        <div class="col-xl col-md col-sm-3 col-4 d-flex justify-content-center">
           <div class="partner-single">
             <a href="#" target="_blank" ><img src="https://i.postimg.cc/MHzQpv25/Point-Fashion.png" alt="Point-Fashion"></a>
           </div>
         </div>
-        <div class="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+        <div class="col-xl col-md col-sm-3 col-4 d-flex justify-content-center">
+          <div class="partner-single">
+            <a href="#" target="_blank" ><img src="https://i.postimg.cc/g0H68NY2/Forst-Schwarz.png" alt="kardo-squad"></a>
+          </div>
+        </div>
+        <div class="col-xl col-md col-sm-3 col-4 d-flex justify-content-center">
           <div class="partner-single">
             <a href="#" target="_blank" ><img src="https://i.postimg.cc/1RnvbzyF/Kardo.png" alt="kardo-squad"></a>
           </div>
         </div>
-        <div class="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+        <div class="col-xl col-md col-sm-3 col-4 d-flex justify-content-center">
           <div class="partner-single">
             <a href="#" target="_blank" ><img src="https://i.postimg.cc/bY6Jt6Qp/Jack-King.png" alt="Jack & King"></a>
           </div>
         </div>
-        <div class="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+        <div class="col-xl col-md col-sm-3 col-4 d-flex justify-content-center">
           <div class="partner-single">
             <a href="#" target="_blank" ><img src="https://i.postimg.cc/Y2ntDhDH/Media-Events.png" alt="Media Events"></a>
           </div>
         </div> 
-        <div class="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+        <div class="col-xl col-md col-sm-3 col-4 d-flex justify-content-center">
           <div class="partner-single">
             <a href="#" target="_blank" ><img src="https://i.postimg.cc/brjV3HXT/Sparkling-Rocco.png" alt="Sparkling-Rocco"></a>
           </div>
         </div>
-        <div class="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+        <div class="col-xl col-md col-sm-3 col-4 d-flex justify-content-center">
           <div class="partner-single">
             <a href="#" target="_blank" ><img src="https://i.postimg.cc/mryPPTLg/altemuehle.png" alt="altemuehle"></a>
           </div>
