@@ -1932,14 +1932,14 @@ font-size: 20px;
     margin-left: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    height: 440px;
+    height: 365px;
   }
   .ticket-karte-vip{
     margin-right: 0px;
     margin-left: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    height: 440px;
+    height: 365px;
   }
   .ticket-karte h3{
     font-size: 14px;
@@ -1957,12 +1957,12 @@ font-size: 20px;
 .ticket-sale-status h3{
   color: #fff;
   font-size: 14px;
-  margin-top: 100px;
+  margin-top: -50px;
 }
 .ticket-sale-status-vip h3{
   color: #fff;
   font-size: 14px;
-  margin-top: -37px;
+  margin-top: -50px;
 }
 .bg-danger {
   background-color: #000000 !important;
@@ -2206,7 +2206,7 @@ CSS
   max-width: 100px;
   padding: 10px;
   transition: 300ms;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .partners img:hover{
   transform: scale(1.1);
@@ -2222,4 +2222,20 @@ CSS
 .card-footer, .card-header {
   padding: 5px;
   background-color: #fff;
+}
+.mobile-disable{
+  display: inherit;
+}
+@media only screen and (max-width: 450px){
+  .mobile-disable{
+    display: none;
+  }
+}
+.mobile-visible{
+  display: none;
+}
+@media only screen and (max-width: 450px){
+  .mobile-visible{
+    display: inherit;
+  }
 }
