@@ -2239,3 +2239,10 @@ CSS
     display: inherit;
   }
 }
+.grayscale-blur img{
+  filter: blur(15px) grayscale(1);
+  pointer-events: none;
+}
+.grayscale-blur p{
+  display: none;
+}
