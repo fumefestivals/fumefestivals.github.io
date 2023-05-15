@@ -1500,6 +1500,10 @@ padding-top: 13vh;
 .sectionfooter {
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
 }
+.sectionfooter .col-md-6{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 footer .overlay-image {
   height: 80%;
   width: 80%;
@@ -2002,6 +2006,12 @@ font-size: 20px;
     rgba(0, 0, 0, 0.3) 20px
   )
 }
+.ticket-top-vip p{
+  color: #fff;
+  font-size: 11px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 .offlineshops {
   margin-bottom: 50px;
   min-height: 150px;
@@ -2245,4 +2255,8 @@ CSS
 }
 .grayscale-blur p{
   display: none;
+}
+.eventgallery{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
