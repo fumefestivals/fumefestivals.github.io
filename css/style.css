@@ -1904,6 +1904,15 @@ font-size: 20px;
   margin-left: 10px;
   transition: 700ms;
 }
+.ticket-karte-schlums {
+  background: linear-gradient(37deg, rgb(0, 139, 79) 1%, rgb(255, 98, 0) 100%);
+  width: 260px;
+  height: 420px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: 700ms;
+}
 .ticket-karte:hover {
   filter:brightness(1.2);
   scale: 0.98;
@@ -1963,6 +1972,13 @@ font-size: 20px;
     padding-left: 0px;
     height: 365px;
   }
+  .ticket-karte-schlums{
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 365px;
+  }
   .ticket-karte-vip{
     margin-right: 0px;
     margin-left: 0px;
@@ -1978,6 +1994,9 @@ font-size: 20px;
   }
   .ticket-beschreibung{
     font-size: 10px;
+  }
+  .ticket-karte-schlums h3{
+    font-size: 14px;
   }
 }
 .ticketsection .progress{
