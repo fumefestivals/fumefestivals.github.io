@@ -1694,8 +1694,13 @@ footer .overlay-image {
   background-size: cover;
   background-attachment: local;
   position: relative;
-  height: 60vh;
+  height: 100vh;
   overflow-x: hidden !important;
+}
+@media only screen and (max-width: 768px){
+  .eventsection {
+    height: 70vh;
+  }
 }
 .eventcontent {
   margin-top: 50px;
@@ -1761,6 +1766,8 @@ footer .overlay-image {
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   padding: 12px 50px;
   border-radius: 5px;
+
+  
   text-align: center;
   transition: 300ms;
   cursor: pointer;
@@ -1878,7 +1885,7 @@ font-size: 20px;
 .ticket-karte {
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   width: 260px;
-  height: 490px;
+  height: 420px;
   border-radius: 10px;
   margin-right: 10px;
   margin-left: 10px;
@@ -1891,7 +1898,7 @@ font-size: 20px;
 .ticket-karte-vip {
   background: linear-gradient(37deg, rgb(64, 50, 0) 10%, rgb(80, 73, 0) 100%);
   width: 260px;
-  height: 490px;
+  height: 420px;
   border-radius: 10px;
   transition: 700ms;
   margin-right: 10px;
@@ -2186,6 +2193,14 @@ CSS
 .event-title{
   padding-top: 20vh;
 }
+.event-title img{
+width: 800px;
+}
+@media only screen and (max-width: 768px){
+  .event-title img{
+    width: 350px;
+    }
+}
 .event-title h4{
   color: white;
   cursor: default;
@@ -2264,4 +2279,17 @@ CSS
 .eventgallery{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.logo-coming-soon{
+  width: 150px;
+}
+.logo-coming-soon img{
+  width: 100%;
+}
+.comingsoon h3{
+  color: white;
+}
+.margin-top{
+  margin-top: -120px;
+  margin-bottom: -350px;
 }
