@@ -2325,3 +2325,6 @@ width: 800px;
   margin-top: -120px;
   margin-bottom: -350px;
 }
+.color-schlums {
+  background: linear-gradient(37deg, rgb(0, 139, 79) 1%, rgb(255, 98, 0) 100%) !important;
+}
