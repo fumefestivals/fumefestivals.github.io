@@ -2328,6 +2328,9 @@ width: 800px;
 .color-schlums {
   background: linear-gradient(37deg, rgb(0, 139, 79) 1%, rgb(255, 98, 0) 100%) !important;
 }
+.color-schlums-2 {
+  background: linear-gradient(107deg, rgb(0, 139, 79) 1%, rgb(255, 98, 0) 100%) !important;
+}
 .color-schlums .btn:hover{
   background: linear-gradient(37deg, rgb(0, 107, 60) 1%, rgb(168, 64, 0) 100%) !important;
 }
