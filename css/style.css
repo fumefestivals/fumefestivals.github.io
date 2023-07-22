@@ -2337,3 +2337,16 @@ width: 800px;
 .blanksection{
   height: 100vh;
 }
+.pagesection {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/FRp7sYWc/ASP-79.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  height: 50vh;
+  overflow-x: hidden !important;
+}
+@media only screen and (max-width: 768px){
+  .pagesection {
+    height: 50vh;
+  }
+}
