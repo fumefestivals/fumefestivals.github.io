@@ -2334,3 +2334,6 @@ width: 800px;
 .color-schlums .btn:hover{
   background: linear-gradient(37deg, rgb(0, 107, 60) 1%, rgb(168, 64, 0) 100%) !important;
 }
+.blanksection{
+  height: 100vh;
+}
