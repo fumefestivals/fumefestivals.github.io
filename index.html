@@ -70,7 +70,7 @@
 
 <!-- banner -->
 <section class="banner position-relative d-flex justify-content-center align-items-center">
-  <video autoplay muted>
+  <video autoplay muted preload="none" poster="https://i.postimg.cc/j5jM04n8/image.jpg">
     <source src="Blacklight Edition.m4v" type="video/mp4">
   </video>
   <img src="https://i.postimg.cc/x84YQ8sy/Fume-BG.png" alt="overlay" class="overlay-image img-fluid">
@@ -513,6 +513,12 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+<script>
+    var lazyLoadInstance = new LazyLoad({
+// Your custom settings go here
+});
 </script>
 
 </body>
