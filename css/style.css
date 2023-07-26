@@ -765,7 +765,12 @@ a:hover {
     margin: 10px auto 30px;
   }
 }
-
+ .banner video{
+  height: 96vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -1076,7 +1081,6 @@ textarea.form-control {
 
 .banner {
   min-height: 96vh;
-  background: linear-gradient(37deg, rgba(76, 0, 86, 0.5) 1%, rgba(28, 0, 80, 0.5) 100%), url("https://i.postimg.cc/R0yLvbYK/ASP-132.jpg") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
