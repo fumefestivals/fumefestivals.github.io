@@ -765,8 +765,15 @@ a:hover {
     margin: 10px auto 30px;
   }
 }
- .banner video{
+.videoclass{
   height: 96vh;
+  background-color: #000;
+}
+ .banner video{
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  opacity: 0.7;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -843,7 +850,6 @@ a:hover {
   position: absolute;
   object-fit: cover;
   height: 96vh;
-  left: 0;
   top: 0;
 }
 
