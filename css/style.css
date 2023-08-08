@@ -717,12 +717,18 @@ a:hover {
   margin-bottom: 50px;
 }
 .artistselectioncard{
-  width: 100%;
+  width: 300px;
+  height: 350px;
   margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.artistselectioncard p{
+  text-align: center;
+  font-size: 15px;
 }
 .artistselectioncard img{
   width: 100%;
-  height: 450px;
+  height: 100%;
   object-fit: cover;
   border-radius: 5px;
   filter: grayscale(1);
@@ -2941,4 +2947,35 @@ Main Components
 }
 .title-editions h2{
   padding-bottom: 50px;
+}
+.artist-submissionimage{
+  width: 400px;
+  height: 250px;
+}
+.artist-submissionimage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.artistsubmissiontext h1{
+  font-size: 35px;
+}
+.artistsubmissiontext a{
+  background: linear-gradient(37deg, rgba(116, 0, 132, 0.788) 1%, rgba(47, 0, 135, 0.656) 100%);
+  color: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+.artistsubmissiontext {
+  text-align: justify;
+}
+.artists-sumbission{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sectionartists-details{
+  background-color: #efefef;
 }
