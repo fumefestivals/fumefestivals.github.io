@@ -10,6 +10,9 @@ body {
   color: #6c6c86;
   overflow-x: hidden !important;
 }
+section{
+  overflow-x: hidden !important;
+}
 
 p {
   font-weight: 400;
