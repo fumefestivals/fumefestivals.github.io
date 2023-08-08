@@ -1294,9 +1294,8 @@ padding-top: 13vh;
   margin-bottom: 50px;
 }
 .artistplayedevent {
-  background-color:#000000 ;
+  background-color:#3b003e ;
   width: 100%;
-  min-width: 100px;
   height: 20px;
   border-radius: 5px;
   margin-bottom: 3px;
@@ -1318,11 +1317,14 @@ padding-top: 13vh;
   padding-bottom: 10px;
 }
 .maylikeartist-single-inner{
-  width: 70%;
+  width: 280px;
+  height: 500px;
 }
 .maylikeartist-single-inner img{
   width: 100%;
-  margin-top: 40px;
+  height: 60%;
+  object-fit: cover;
+  margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
   filter: grayscale(1);
