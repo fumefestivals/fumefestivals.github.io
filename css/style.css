@@ -1118,7 +1118,7 @@ textarea.form-control {
 .bannerartist-detail {
   min-height: 70vh;
   padding-top: 6vh;
-  padding-bottom: 10vh;
+  padding-bottom: 20vh;
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   background-size: cover;
   background-attachment: fixed;
@@ -1188,20 +1188,24 @@ padding-top: 13vh;
 .artistbio .artistbioimage img:hover{
   transform: scale(0.95);
 }
+.socialmediadescription{
+  justify-content: center;
+  padding: 10px;
+}
+.socialmediadescription p{
+  font-size: 20px;
+}
 .artistbio .artist-socialmedia {
-  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
-  width: 75px;
-  height: 75px;
-  border-radius: 3px;
   transition: 300ms;
+  padding: 10px;
   }
   .artistbio .artist-socialmedia:hover {
     filter: brightness(0.85);
     transform: scale(0.95);
     }
 .artistbio .artist-socialmedia i{
-  color: #ffffff;
-  font-size: 30px;
+  color: #414141;
+  font-size: 25px;
 }
 @media only screen and (max-width: 1199px){
   .artistbio .artist-socialmedia {
@@ -2983,4 +2987,8 @@ Main Components
 }
 .sectionartists-details{
   background-color: #efefef;
+}
+.musicpreview{
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
