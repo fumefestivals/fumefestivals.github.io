@@ -991,10 +991,6 @@ a:hover {
   border: 0;
   border-bottom: 1px solid #d2d2e2;
 }
-.form-control:focus {
-  box-shadow: none !important;
-  border-color: #f7463a;
-}
 
 textarea.form-control {
   height: 150px;
@@ -2991,4 +2987,133 @@ Main Components
 .musicpreview{
   margin-top: 50px;
   margin-bottom: 10px;
+}
+.gradient-brand-color {
+  background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+  background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+  color: #fff;
+}
+.contact-info__wrapper {
+  overflow: hidden;
+  border-radius: .625rem .625rem 0 0
+}
+
+@media (min-width: 1024px) {
+  .contact-info__wrapper {
+      border-radius: 0 .625rem .625rem 0;
+      padding: 5rem !important
+  }
+}
+.contact-info__list span.position-absolute {
+  left: 0
+}
+.z-index-101 {
+  z-index: 101;
+}
+.list-style--none {
+  list-style: none;
+}
+.contact__wrapper {
+  background-color: #fff;
+  border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+  .contact__wrapper {
+      border-radius: .625rem 0 .625rem .625rem
+  }
+}
+@media (min-width: 1024px) {
+  .contact-form__wrapper {
+      padding: 5rem !important
+  }
+}
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+.applypromoter-title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.applypromoter-title h2{
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.applypromoter-title p{
+  font-size: 11px;
+}
+.promoter-application-form input::placeholder,
+.promoter-application-form select{
+  font-size: 14px;
+  font-weight: 300;
+  color: #989898 !important;
+}
+.promoter-application-form textarea{
+  border: solid 0.5px #989898;
+}
+.form-control-file{
+  color: #ffffff;
+}
+.fileupload label {
+	display: block;
+	width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+	background-color: slateblue;
+	border-radius: 2px;
+	font-size: 1em;
+	line-height: 2.5em;
+	text-align: center;
+  cursor:copy;
+}
+
+.fileupload label:hover {
+	background-color: cornflowerblue;
+}
+
+.fileupload label:active {
+	background-color: mediumaquamarine;
+}
+
+.fileupload input {
+	border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.promoter-application-form textarea::placeholder {
+  font-size: 12px;
+  color: #989898;
+  font-weight: 200;
+}
+.form-check label{
+  font-size: 12px;
+  padding-left: 10px;
+  padding: 5px;
+}
+.form-check {
+  height: 10px;
+}
+.form-check input:active{
+  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
+  accent-color: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
+}
+.promoter-application-section{
+  padding-bottom: 100px;
+}
+.form-button button{
+  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0px;
+} 
+.form-button button:hover{
+  background: linear-gradient(37deg, rgb(103, 0, 117) 1%, rgb(60, 0, 172) 100%);
 }
