@@ -3117,3 +3117,15 @@ Main Components
 .form-button button:hover{
   background: linear-gradient(37deg, rgb(103, 0, 117) 1%, rgb(60, 0, 172) 100%);
 }
+.event-navigation-description h1{
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.event-navigation-description p{
+  font-size: 10px;
+  font-weight: 400;
+}
+.event-navigation-description {
+  padding-bottom: 10px;
+}
