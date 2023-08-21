@@ -1742,8 +1742,8 @@ footer .overlay-image {
   background-size: cover;
   background-attachment: local;
   position: relative;
+  object-fit: cover;
   height: 100vh;
-  overflow-x: hidden !important;
 }
 @media only screen and (max-width: 768px){
   .eventsection-schlums {
@@ -1751,7 +1751,7 @@ footer .overlay-image {
   }
 }
 .eventcontent {
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 40px;
 }
 .eventcontent .section-border{
@@ -2262,6 +2262,7 @@ CSS
 }
 .event-title img{
 width: 800px;
+padding-top: 150px;
 }
 @media only screen and (max-width: 768px){
   .event-title img{
@@ -2392,7 +2393,7 @@ width: 800px;
 .single-event{
   width: 500px;
   height: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 .single-event img{
   width: 100%;
