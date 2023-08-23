@@ -994,6 +994,7 @@ a:hover {
 
 textarea.form-control {
   height: 150px;
+  resize: none;
 }
 
 /* /form control */
