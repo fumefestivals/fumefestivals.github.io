@@ -3177,3 +3177,9 @@ padding-bottom: 5 0px;
   filter: brightness(0.8);
   transform: scale(1.05);
 }
+.carousel-control-prev{
+  left: -90px;
+}
+.carousel-control-next{
+  right: -90px;
+}
