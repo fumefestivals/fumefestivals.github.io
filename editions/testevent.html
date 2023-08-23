@@ -86,6 +86,12 @@
 </section>
 <section class="eventcontent" data-aos="fade-up" data-aos-duration="1000" data-aos-once='true'>
 <div class="container">
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    Wanna <strong>promote</strong> this event, and fetch some perks? <a class="alert-link" href="..//promoter/schlums/apply.html">Click here</a>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
   <div class="row justify-content-center align-items-center">
     <div class="col-xl-6 col-lg-6 col-md-6">
       <h1>
@@ -380,6 +386,7 @@
         </div>
       </div>
     </div>
+  </div>
 </section>
 <section class="specials">
   <div class="custom-shape-divider-top-1680561536">
@@ -436,6 +443,9 @@
         <div class="mainstage color-schlums" data-aos="fade-right" data-aos-duration="1000" data-aos-once='true'>
           <h1>Main Stage</h1>
           <div class="mobile-disable">
+            <div class="container">
+              
+            </div>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <div class="carousel-item active">
                 <div class="row">
@@ -612,6 +622,17 @@
     </svg>
 </div>
   <div class="container">
+    <div class="specialstitle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>Event Gallery</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ducimus porro fuga, reprehenderit, quis quod repellendus mollitia ipsum quos, eligendi debitis blanditiis laudantium unde ratione repellat possimus deserunt? Porro, at.</p>
+            <div class="section-border color-schlums"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="client-logo-slider d-flex align-items-center" width="1000px">
       <a data-fslightbox="gallery" href="https://i.postimg.cc/9QzBZNx8/image.jpg" class="text-center d-block outline-0 "><img class="d-unset img-fluid" src="https://i.postimg.cc/9QzBZNx8/image.jpg" alt="Eventpic"></a>
       <a data-fslightbox="gallery" href="https://i.postimg.cc/prTm4353/image.jpg" class="text-center d-block outline-0 "><img class="d-unset img-fluid" src="https://i.postimg.cc/prTm4353/image.jpg"  alt="Eventpic"></a>
@@ -625,6 +646,9 @@
       <a data-fslightbox="gallery" href="https://i.postimg.cc/660Shg0t/image.jpg" class="text-center d-block outline-0 "><img class="d-unset img-fluid" src="https://i.postimg.cc/660Shg0t/image.jpg" alt="Eventpic"></a>
       <a data-fslightbox="gallery" href="https://i.postimg.cc/ZRJHBYX3/image.jpg" class="text-center d-block outline-0 "><img class="d-unset img-fluid" src="https://i.postimg.cc/ZRJHBYX3/image.jpg" alt="Eventpic"></a>
       <a data-fslightbox="gallery" href="https://i.postimg.cc/SsVrWFpP/image.jpg" class="text-center d-block outline-0 "><img class="d-unset img-fluid" src="https://i.postimg.cc/SsVrWFpP/image.jpg" alt="Eventpic"></a>
+    </div>
+    <div class="gallerybutton text-center">
+      <a href="#" class="btn btn-primary color-schlums">Scroll through all pictures that where took at this edition</a>
     </div>
   </div>
 </section>
@@ -696,12 +720,12 @@
               </div>
               <div class="col-6 justify-content-end d-flex">
                 <div class="appstore-shuttle">
-                  <img src="https://i.postimg.cc/W4J94PLb/322-3225520-download-the-app-available-on-the-app-store.png">
+                 <a target="_blank" href="#"><img src="https://i.postimg.cc/W4J94PLb/322-3225520-download-the-app-available-on-the-app-store.png"></a>
                 </div>
               </div>
               <div class="col-6 justify-content-start d-flex">
                 <div class="playstore-shuttle">
-                  <img src="https://i.postimg.cc/g0vv5cbR/image.png">
+                  <a target="_blank" href="#"><img src="https://i.postimg.cc/g0vv5cbR/image.png"></a>
                 </div>
               </div>
             </div>
@@ -934,6 +958,14 @@ window.addEventListener('scroll', function() {
   }
   form.addEventListener("submit", handleSubmit)
 </script>
+<script>$(function() {
+  const showAlert = localStorage.getItem("alert") === null;
+  $(".alert").toggleClass("d-none",!showAlert)
+  $(".close").on("click",function() {
+    localStorage.setItem("alert","seen");
+    $(this).closest(".alert").addClass("d-none")
+  });
+}) </script>
 <script src="/Image-lightbox/fslightbox.js"></script>
 </body>
 </html>
