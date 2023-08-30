@@ -3184,3 +3184,24 @@ padding-bottom: 5 0px;
 .carousel-control-next{
   right: -90px;
 }
+.newsletter{
+padding-bottom: 50px;
+}
+.newsletter .innersection{
+  padding-top: 20px;
+}
+.newsletter h1{
+  padding-top: 20px;
+  font-size: 39px;
+  font-weight: 700;
+}
+.newsletter input{
+  border: 1px solid rgb(167, 167, 167);
+}
+.newsletter-information {
+  width: 1000px;
+}
+.newsletter .newsletter-information p{
+  font-size: 10px;
+  text-align: justify;
+}
