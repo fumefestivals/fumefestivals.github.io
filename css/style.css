@@ -226,7 +226,6 @@ body {
 
 ol,
 ul {
-  list-style-type: none;
   margin: 0px;
 }
 
@@ -3207,4 +3206,15 @@ padding-bottom: 50px;
 }
 .newsletter .btn-primary {
   font-size: 14px;
+}
+.privacy-desc{
+  padding-top: 50px;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+.privacy-desc h2{
+  font-size: 28px;
+}
+.privacy-desc ul{
+  padding-bottom: 10px;
 }
