@@ -1546,7 +1546,18 @@ footer .overlay-image {
   left: 10%;
   top: 10%;
 }
-
+footer h4{
+  font-size: 23px;
+  color: #ffff;
+  text-transform: uppercase;
+  padding-top: 15px;
+  transition: 300ms;
+  cursor: default;
+}
+footer h4:hover{
+  letter-spacing: 5px;
+  cursor: default;
+}
 /* progressbar */
 .progress-block .progress {
   height: 8px;
