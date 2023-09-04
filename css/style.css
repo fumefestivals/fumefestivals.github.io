@@ -3208,13 +3208,15 @@ padding-bottom: 50px;
   font-size: 14px;
 }
 .privacy-desc{
-  padding-top: 50px;
   text-align: justify;
-  padding-bottom: 50px;
 }
 .privacy-desc h2{
   font-size: 28px;
 }
+.privacy-desc p{
+  font-size: 13px;
+}
 .privacy-desc ul{
-  padding-bottom: 10px;
+  padding-bottom: 13px;
+  font-size: 13px;
 }
