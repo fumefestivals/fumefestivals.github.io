@@ -381,6 +381,9 @@ a:hover {
 */
 .faqtitle{
 }
+.faq-inner{
+  padding-top: 80px;
+}
 .faqsection{
   padding-bottom: 50px;
   background-color: #eeeeee; 
@@ -2244,6 +2247,26 @@ CSS
 .custom-shape-divider-top-1680561536-grey .shape-fill {
   fill: #eeeeee;
 }
+CSS
+.custom-shape-divider-top-1680561536-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1680561536-black svg {
+  position: relative;
+  display: block;
+  width: calc(208% + 1.3px);
+  height: 93px;
+}
+
+.custom-shape-divider-top-1680561536-black .shape-fill {
+  fill: #000000;
+}
 .custom-shape-divider-bottom-1680562519 {
   position: absolute;
   bottom: 0;
@@ -2425,11 +2448,15 @@ padding-top: 150px;
   transform: scale(1.02);
 }
 .news-short{
-  background-color: #000000;
   height: 40px;
+  text-align: center;
+  width: 600px;
+  border-top: solid 1px #eeeeee;
+  border-bottom: solid 1px #eeeeee;
+  margin: auto;
 }
 .news-short p{
-  color: white;
+  color: #000000;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
