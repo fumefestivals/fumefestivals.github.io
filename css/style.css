@@ -2634,7 +2634,7 @@ Main Components
   height: 100px;
   width: 90%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .cd-horizontal-timeline .events-wrapper {
   position: relative;
@@ -3259,4 +3259,9 @@ padding-bottom: 50px;
 .privacy-desc li{
   padding-bottom: 13px;
   padding-top: 13px;
+}
+.partnersection{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: justify;
 }
