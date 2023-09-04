@@ -226,6 +226,7 @@ body {
 
 ol,
 ul {
+  list-style-type: none;
   margin: 0px;
 }
 
@@ -3217,6 +3218,11 @@ padding-bottom: 50px;
   font-size: 13px;
 }
 .privacy-desc ul{
-  padding-bottom: 13px;
   font-size: 13px;
+  line-height: 20px;
+  list-style-type: inherit;
+}
+.privacy-desc li{
+  padding-bottom: 13px;
+  padding-top: 13px;
 }
