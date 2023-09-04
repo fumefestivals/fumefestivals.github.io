@@ -441,8 +441,11 @@ a:hover {
   object-fit: cover;
   background-size: cover;
 }
+.social-container{
+}
 .instafeed{
   width: 900px;
+  padding-bottom: 150px;
 }
 .instafeedtop {
   border-radius: 10px;
@@ -1098,7 +1101,6 @@ textarea.form-control {
 }
 
 .banner {
-  min-height: 96vh;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
