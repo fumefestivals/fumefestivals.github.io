@@ -3315,3 +3315,6 @@ padding-bottom: 50px;
   width: 300px;
   object-fit: cover;
 }
+.event-navigation-desc{
+  padding-bottom: 30px;
+}
