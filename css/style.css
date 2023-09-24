@@ -3310,3 +3310,8 @@ padding-bottom: 50px;
 .padding-top{
   padding-top: 20px;
 }
+.client-logo-slider img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
