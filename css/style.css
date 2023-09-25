@@ -123,7 +123,9 @@ h6, .h6 {
   font-size: 20px;
   padding: 20px 90px;
 }
-
+.button1{
+  font-size: 14px;
+}
 .btn-primary {
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   color: #fff;
