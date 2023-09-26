@@ -2466,7 +2466,8 @@ padding-top: 150px;
   transform: scale(1.02);
 }
 .news-short{
-  height: 40px;
+  height: 100%;
+  padding-top: 10px;
   text-align: center;
   width: 600px;
   border-top: solid 1px #eeeeee;
