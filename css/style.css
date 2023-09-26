@@ -1007,7 +1007,7 @@ a:hover {
 }
 
 textarea.form-control {
-  height: 150px;
+  height: 110px;
   resize: none;
 }
 
@@ -1757,7 +1757,7 @@ footer h4:hover{
   background-size: cover;
   background-attachment: local;
   position: relative;
-  height: 100vh;
+  height: 80vh;
   overflow-x: hidden !important;
 }
 @media only screen and (max-width: 768px){
@@ -1771,7 +1771,7 @@ footer h4:hover{
   background-attachment: local;
   position: relative;
   object-fit: cover;
-  height: 100vh;
+  height: 80vh;
 }
 @media only screen and (max-width: 768px){
   .eventsection-schlums {
@@ -2448,7 +2448,6 @@ padding-top: 150px;
 }
 .event-navigation{
   padding-top: 50px;
-  padding-bottom: 60px;
 }
 .single-event{
   width: 500px;
@@ -2482,7 +2481,7 @@ padding-top: 150px;
   padding-top: 8px;
 }
 .platzunten{
-  padding-bottom: 140px;
+  padding-bottom: 70px;
 }
 .bg-gradient_solid {
   background: var(--primary-gradient);
@@ -3295,11 +3294,6 @@ padding-bottom: 50px;
   padding-bottom: 50px;
 }
 .work-position-card{
-  width: 300px;
-  height: 50px;
-  background: linear-gradient(37deg, rgb(103, 0, 117) 1%, rgb(60, 0, 172) 100%);
-  border-radius: 10px;
-  margin-bottom: 5px;
 }
 .work-position-card h4{
   color: white;
@@ -3318,4 +3312,12 @@ padding-bottom: 50px;
 }
 .event-navigation-desc{
   padding-bottom: 30px;
+}
+.aboutimage img{
+  filter: grayscale(0.5);
+  transition: 300ms;
+}
+.aboutimage img:hover{
+  filter: grayscale(0);
+  transform: scale(0.95);
 }
