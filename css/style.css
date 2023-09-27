@@ -1194,6 +1194,10 @@ padding-top: 13vh;
     justify-content: center;
     display: flex;
   }
+  .artistheader-name i{
+    padding-top: 5px;
+    padding-right: 5px;
+  }
 }
 .artistbio {
   margin-top: 8vh;
