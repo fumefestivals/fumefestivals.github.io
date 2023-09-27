@@ -142,6 +142,24 @@ h6, .h6 {
   height: 50px;
   text-align: center;
 }
+@media only screen and (max-width: 768px){
+  .btn-primary {
+    background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    min-width: 120px;
+    height: 40px;
+    text-align: center;
+  }
+}
 .btn-primary h3{
   color: white;
   font-size: 16px;
@@ -1729,6 +1747,12 @@ footer h4:hover{
   padding-top: 4px;
   font-size: 15px;
 }
+@media only screen and (max-width: 768px){
+  .card span{
+    padding-top: 4px;
+    font-size: 12px;
+  }
+}
 .card-img-top {
   border-radius: 0;
 }
@@ -1738,6 +1762,11 @@ footer h4:hover{
 .card-body {
   border: 0;
   border-radius: 0;
+}
+@media only screen and (max-width: 768px){
+  .card-body {
+    font-size: 13px;
+  }
 }
 .card-footer {
   border: 0;
@@ -3261,6 +3290,13 @@ padding-bottom: 50px;
 .newsletter .newsletter-information p{
   font-size: 10px;
   text-align: justify;
+}
+@media only screen and (max-width: 767px){
+  .newsletter .newsletter-information p{
+    padding-top: 14px;
+    font-size: 9px;
+    text-align: justify;
+  }
 }
 .newsletter .btn-primary {
   font-size: 14px;
