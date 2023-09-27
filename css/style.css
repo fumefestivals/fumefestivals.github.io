@@ -2409,9 +2409,8 @@ padding-top: 150px;
 .gallerybutton a{
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   margin-top: 20px;
+  max-width: 100%;
 }
 .logo-coming-soon{
   width: 150px;
@@ -3202,6 +3201,11 @@ textarea::placeholder{
   height: auto;
   position: relative;
 }
+@media only screen and (max-width: 768px){
+  .logo-small-form{
+    padding-bottom: 50px;
+  }
+}
 .event-navigation-description h1{
   font-size: 25px;
   font-weight: 600;
@@ -3316,6 +3320,7 @@ padding-bottom: 50px;
   padding-bottom: 50px;
 }
 .work-position-card{
+  padding-bottom: 20px;
 }
 .work-position-card h4{
   color: white;
