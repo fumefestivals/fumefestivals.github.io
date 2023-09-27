@@ -1556,6 +1556,14 @@ padding-top: 13vh;
   padding-top: 50px;
   padding-bottom: 45px;
 }
+.bottom-mobile-footer{
+  padding-top: 10px;
+}
+@media only screen and (max-width: 768px){
+  .bottom-mobile-footer{
+    padding-top: 50px;
+  }
+}
 footer .overlay-image {
   height: 80%;
   width: 80%;
