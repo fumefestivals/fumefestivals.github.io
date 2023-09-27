@@ -155,9 +155,19 @@ h6, .h6 {
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 600;
-    min-width: 120px;
+    min-width: 220px;
     height: 40px;
     text-align: center;
+  }
+}
+.button-apply-artist{
+  max-width: 100px;
+}
+@media only screen and (max-width: 768px){
+  .button-apply-artist{
+    display: flex;
+    margin-top: 20px;
+    max-width: 100%;
   }
 }
 .btn-primary h3{
@@ -767,13 +777,8 @@ a:hover {
   transform: scale(0.95);
 }
 @media only screen and (max-width: 767px){
-  .artistselectioncard img{
-    height: 300px
-  }
-}
-@media only screen and (max-width: 450px){
-  .artistselectioncard img{
-    height: 200px
+  .artistselectioncard{
+    max-height: 200px;
   }
 }
 .section-title2 {
@@ -1177,18 +1182,17 @@ padding-top: 13vh;
   padding-left: 12px;
   font-size: 15px;
 }
-@media only screen and (max-width: 991px){
-  .artistheader-name{
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 768px){
   .artistheader-name h2{
+    color: #fff;
     font-size: 100px;
-    line-height: 100px;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 30px;
   }
   .artistheader-name p{
-    padding-left: 0px;
+    justify-content: center;
+    display: flex;
   }
 }
 .artistbio {
@@ -1217,57 +1221,26 @@ padding-top: 13vh;
 .socialmediadescription p{
   font-size: 20px;
 }
-.artistbio .artist-socialmedia {
-  transition: 300ms;
-  padding: 10px;
-  }
-  .artistbio .artist-socialmedia:hover {
-    filter: brightness(0.85);
-    transform: scale(0.95);
-    }
-.artistbio .artist-socialmedia i{
-  color: #414141;
-  font-size: 25px;
-}
-@media only screen and (max-width: 1199px){
-  .artistbio .artist-socialmedia {
-    width: 50px;
-    height: 50px;
-    }
-}
-@media only screen and (max-width: 991px){
-  .artistbio .artist-socialmedia {
-    width: 40px;
-    height: 40px;
-    }
-    .artistbio .artist-socialmedia i{
-      font-size: 20px;
-    }
-}
-@media only screen and (max-width: 767px){
-  .artistbio .artist-socialmedia {
-    width: 80px;
-    height: 80px;
-    }
-    .artistbio .artist-socialmedia i{
-      font-size: 35px;
-    }
-}
-@media only screen and (max-width: 450px){
-  .artistbio .artist-socialmedia {
-    width: 60px;
-    height: 60px;
-    }
-    .artistbio .artist-socialmedia i{
-      font-size: 30px;
-    }
-}
-.artistibiodescription{
+.artistbiodescription{
   width: 100%;
   text-align: justify;
 }
 .artistbiodescription p{
   text-align: justify;
+}
+.social-media-icons{
+  padding-top: 20px;
+}
+.social-media-icons i{
+  font-size: 25px;
+  transition: 300ms;
+}
+.social-media-icons a{
+  color: #3b3b3b;
+}
+.social-media-icons i:hover{
+  transform: scale(1.5);
+  color: #3b003e;
 }
 .artistpictures{
   background-color: #eee;
@@ -3053,7 +3026,7 @@ Main Components
   padding-bottom: 50px;
 }
 .artist-submissionimage{
-  width: 400px;
+  width: 100%;
   height: 250px;
 }
 .artist-submissionimage img{
