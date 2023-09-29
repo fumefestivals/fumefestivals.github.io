@@ -1856,7 +1856,7 @@ footer h4:hover{
   padding-top: 20px;
 }
 .ticketsbutton{
-  margin-top: 30px;
+
 }
 .button-offline-tickets{
   color: #ffff;
@@ -1875,8 +1875,6 @@ footer h4:hover{
   background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
   padding: 12px 50px;
   border-radius: 5px;
-
-  
   text-align: center;
   transition: 300ms;
   cursor: pointer;
@@ -1909,7 +1907,6 @@ footer h4:hover{
   .ticketsbutton a,
   .ticketsbutton a2{
     font-size: 11px;
-    padding: 12px 37px;
     margin-right: 0px;
   }
   .eventcontent h1{
