@@ -2352,15 +2352,19 @@ CSS
   fill: #FFFFFF;
 }
 .event-title{
-  padding-top: 20vh;
+  padding-top: 26vh;
+  max-width: 800px;
+  margin: auto;
 }
 .event-title img{
-width: 800px;
-padding-top: 150px;
+width: 100%;
 }
 @media only screen and (max-width: 768px){
+  .event-title{
+    padding-top: 39vh;
+  }
   .event-title img{
-    width: 350px;
+    width: 100%;
     }
 }
 .event-title h4{
@@ -2382,11 +2386,6 @@ padding-top: 150px;
 .event-title:hover h4{
   transform: scale(0.95);
   color: #6cafb8;
-}
-@media only screen and (max-width: 768px){
-  .event-title{
-    padding-top: 27vh;
-  }
 }
 .partners {
   align-items: center;
