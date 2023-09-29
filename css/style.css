@@ -2349,20 +2349,34 @@ CSS
   fill: #FFFFFF;
 }
 .event-title{
-  padding-top: 26vh;
+  padding-top: 21vh;
   max-width: 800px;
   margin: auto;
 }
 .event-title img{
 width: 100%;
 }
+.party-event-title{
+  padding-top: 26vh;
+  max-width: 800px;
+  margin: auto;
+}
+.party-event-title img{
+width: 100%;
+}
 @media only screen and (max-width: 768px){
   .event-title{
+    padding-top: 26vh;
+  }
+  .party-event-title{
     padding-top: 39vh;
   }
   .event-title img{
     width: 100%;
     }
+    .party-event-title img{
+      width: 100%;
+      }
 }
 .event-title h4{
   color: white;
@@ -2491,11 +2505,6 @@ width: 100%;
   position: relative;
   height: 90vh;
   overflow-x: hidden !important;
-}
-@media only screen and (max-width: 768px){
-  .pagesection {
-    height: 50vh;
-  }
 }
 .content-404{
   text-align: center; 
