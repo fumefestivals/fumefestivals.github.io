@@ -2183,6 +2183,19 @@ font-size: 20px;
 .ortschaft-promoter {
   margin-top: 50px;
 }
+.tt-stage-title{
+  text-transform: uppercase;
+}
+.event-timetable{
+}
+.timetable{
+  margin: auto;
+  max-width: 500px;
+}
+.timetable p{
+  font-size: 15px;
+  text-transform: uppercase;
+}
 .mainstage{
   background: linear-gradient(37deg, rgba(18, 0, 20, 0.667) 1%, rgba(146, 0, 141, 0.656) 100%);
   padding: 10px 40px;
@@ -2376,7 +2389,6 @@ padding-top: 150px;
   }
 }
 .partners {
-  background-color: #eeee;
   align-items: center;
   width: 100%;
   overflow-x: hidden !important;
@@ -2426,9 +2438,7 @@ padding-top: 150px;
   display: none;
 }
 .eventgallery{
-  margin-top: 50px;
   padding-bottom: 50px;
-  background-color: #efefef;
 }
 .eventgallery img{
   padding-top: 10px;
@@ -3247,6 +3257,7 @@ textarea::placeholder{
   padding-bottom: 10px;
 }
 .nightliner{
+  background-color: #efefef;
 padding-bottom: 5 0px;
 }
 .nightliner-info{
