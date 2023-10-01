@@ -101,46 +101,50 @@
           </div>
         </div>
       </div>
-      <form class="promoter-application-form">
+      <form class="promoter-application-form"
+        method="POST" 
+        action="https://script.google.com/macros/s/AKfycbzWipKSeBr0cjTLoeKy-ERZAqzOf_l6EjO0F3XKtGn77If6dUtDuKz3iG7DMMU399TawQ/exec"
+        name="promoter.application"
+      >
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="Name" class="form-control" id="FirstName" aria-describedby="Firstname" required placeholder="First Name">
+              <input type="Name" class="form-control" name="FirstName" id="FirstName" aria-describedby="Firstname" required placeholder="First Name">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="Lastname" class="form-control" id="LastName" aria-describedby="Lastname" required placeholder="Last Name">
+              <input type="Lastname" class="form-control" name="LastName" id="LastName" aria-describedby="LastName" required placeholder="Last Name">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="Phone" class="form-control" id="Phonenumber" aria-describedby="Phonenumber" required placeholder="Phone Number">
+              <input type="Phone" class="form-control" name="PhoneNumber" id="PhoneNumber" aria-describedby="PhoneNumber" required placeholder="Phone Number">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="Email" class="form-control" id="Email" aria-describedby="Email" required placeholder="Email Adress">
+              <input type="Email" class="form-control" name="Email" id="Email" aria-describedby="Email" required placeholder="Email Adress">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="number" class="form-control" id="Followers" aria-describedby="Followers" required placeholder="Instagram Followers">
+              <input type="number" class="form-control" name="Followers" id="Followers" aria-describedby="Followers" required placeholder="Instagram Followers">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" id="Location" aria-describedby="Location" required placeholder="Location">
+              <input type="text" class="form-control" name="Location" id="Location" aria-describedby="Location" required placeholder="Location">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" id="Account" aria-describedby="Account" required placeholder="Instagram Account">
+              <input type="text" class="form-control" name="Instagram" id="Instagram" aria-describedby="Instagram" required placeholder="Instagram Account">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-            <select class="form-control" required id="promotertype">
+            <select class="form-control" name="PromoterType" required id="promotertype">
               <option disabled selected="true">Promotertype</option>
               <option>Ticketpromoter</option>
               <option>Storypromoter</option>
@@ -149,18 +153,18 @@
           </div>
           <div class="col-md-6">
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <input type="checkbox" name="Experience" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">I already have experience promoting events!</label>
             </div>
           </div>
           <div class="col-12">
             <div class="fileupload">
-              <label for="apply"><input required type="file" name="" id="apply" accept="image/*,.pdf"><i class="fa-solid fa-paperclip"></i> Add a valid ID card</label>
+              <label for="apply"><input required type="file" name="id-card" id="apply" accept="image/*,.pdf"><i class="fa-solid fa-paperclip"></i> Add a valid ID card</label>
             </div>
           </div>
           <div class="col-12">
             <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" style="justify-content: center;" placeholder="For feedback, it was just right time to get rid of it now!&#10;Otherwise, just tell us how you're feeling! ;)"></textarea>
+              <textarea class="form-control" name="Feedback" id="exampleFormControlTextarea1" rows="2" style="justify-content: center;" placeholder="For feedback, it was just right time to get rid of it now!&#10;Otherwise, just tell us how you're feeling! ;)"></textarea>
             </div>
           </div>
         </div>
@@ -172,6 +176,17 @@
           </div>
         </div>
       </form>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWipKSeBr0cjTLoeKy-ERZAqzOf_l6EjO0F3XKtGn77If6dUtDuKz3iG7DMMU399TawQ/exec'
+        const form = document.forms['promoter.application']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     </div>
   </section>
 
