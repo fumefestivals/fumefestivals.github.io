@@ -3298,7 +3298,44 @@ textarea::placeholder{
   width: 100%;
   border-radius: 5px;
   border: 0px;
-} 
+}
+.form-button .button:active {
+  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
+}
+.form-button .button__text {
+  color: #ffffff;
+  transition: all 0.2s;
+}
+.form-button .button--loading .button__text{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form-button .button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
 .form-button button:hover{
   background: linear-gradient(37deg, rgb(103, 0, 117) 1%, rgb(60, 0, 172) 100%);
 }

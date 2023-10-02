@@ -176,12 +176,27 @@
         <div class="row">
           <div class="col-7">
             <div class="form-button align-items-center d-flex">
-            <button type="submit" >Submit</button>
+            <button type="submit" onclick="this.classList.toggle('button--loading')">    <span class="button__text">Save</span></button>
             </div>
           </div>
         </div>
       </form>
       <script src="../../js/fileupload.js"></script>
+      <script>$("input[type='text'], textarea").on("keyup", function(){
+        if($(this).val() != "" && $("textarea").val() != "" && $("input[name='category']").is(":checked") == true){
+            $("input[type='submit']").removeAttr("disabled");
+        } else {
+            $("input[type='submit']").attr("disabled", "disabled");
+        }
+    });
+    
+    $("input[name='category']").on("change", function(){
+        if($(this).val() != "" && $("textarea").val() != "" && $("input[name='category']").is(":checked") == true){
+            $("input[type='submit']").removeAttr("disabled");
+        } else {
+            $("input[type='submit']").attr("disabled", "disabled");
+        }
+    });</script>
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzWipKSeBr0cjTLoeKy-ERZAqzOf_l6EjO0F3XKtGn77If6dUtDuKz3iG7DMMU399TawQ/exec'
         const form = document.forms['PromoterApplicationForm']
