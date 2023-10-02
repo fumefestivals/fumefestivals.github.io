@@ -106,7 +106,7 @@
         action="https://script.google.com/macros/s/AKfycbzWipKSeBr0cjTLoeKy-ERZAqzOf_l6EjO0F3XKtGn77If6dUtDuKz3iG7DMMU399TawQ/exec"
         name="PromoterApplicationForm"
         enctype="multipart/form-data"
-        onsubmit="setTimeout(function(){window.location.reload();},10);"
+        onsubmit="myFunction()"
       >
         <div class="row">
           <div class="col-md-6">
@@ -176,7 +176,7 @@
         <div class="row">
           <div class="col-7">
             <div class="form-button align-items-center d-flex">
-            <button type="submit">Submit</button>
+            <button type="submit" >Submit</button>
             </div>
           </div>
         </div>
@@ -192,6 +192,8 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
+      </script>
+      <script>
       </script>
     </div>
   </section>

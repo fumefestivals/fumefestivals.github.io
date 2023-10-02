@@ -30,3 +30,6 @@ function _(el){
   function abortHandler(event){
     _("status").innerHTML = "Upload Aborted";
   }
+  function myFunction() {
+    setInterval(function () { window.location.href = "../../index.html";}, 3000);
+}
