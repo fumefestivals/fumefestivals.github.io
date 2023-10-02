@@ -11,7 +11,7 @@ function _(el){
     ajax.addEventListener("load", completeHandler, false);
     ajax.addEventListener("error", errorHandler, false);
     ajax.addEventListener("abort", abortHandler, false);
-    ajax.open("POST", "file_upload_parser.php");
+    ajax.open("POST", "../../js/file_upload_parser.php");
     ajax.send(formdata);
   }
   function progressHandler(event){
@@ -22,7 +22,7 @@ function _(el){
   }
   function completeHandler(event){
     _("status").innerHTML = event.target.responseText;
-    _("progressBar").value = 0;
+    _("progressBar").value = 100;
   }
   function errorHandler(event){
     _("status").innerHTML = "Upload Failed";
