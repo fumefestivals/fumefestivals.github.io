@@ -104,7 +104,7 @@
       <form class="promoter-application-form"
         method="POST" 
         action="https://script.google.com/macros/s/AKfycbzWipKSeBr0cjTLoeKy-ERZAqzOf_l6EjO0F3XKtGn77If6dUtDuKz3iG7DMMU399TawQ/exec"
-        name="promoter.application"
+        name="PromoterApplicationForm"
         enctype="multipart/form-data"
       >
         <div class="row">
@@ -160,8 +160,10 @@
           </div>
           <div class="col-12">
             <div class="fileupload">
-              <label for="apply"><input required type="file" name="id-card" id="apply" accept="image/*,.pdf" onchange="uploadFile()"><i class="fa-solid fa-paperclip"></i> Add a valid ID card</label>
-              <progress id="progressBar" value="0" max="100" style="width: 100%;"></progress>
+              <label for="file1"><input required type="file" name="file1" id="file1" accept="image/*,.pdf"><i class="fa-solid fa-paperclip"></i> Add a valid ID card</label>
+              <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+              <h3 id="status"></h3>
+              <p id="loaded_n_total"></p>
             </div>
           </div>
           <div class="col-12">
@@ -173,14 +175,15 @@
         <div class="row">
           <div class="col-7">
             <div class="form-button align-items-center d-flex">
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="uploadFile()">Submit</button>
             </div>
           </div>
         </div>
       </form>
+      <script src="../../js/fileupload.js"></script>
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzWipKSeBr0cjTLoeKy-ERZAqzOf_l6EjO0F3XKtGn77If6dUtDuKz3iG7DMMU399TawQ/exec'
-        const form = document.forms['promoter.application']
+        const form = document.forms['PromoterApplicationForm']
       
         form.addEventListener('submit', e => {
           e.preventDefault()
@@ -189,49 +192,15 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
-      <script>
-        function _(el) {
-  return document.getElementById(el);
-}
-
-function uploadFile() {
-  var file = _("id-card").files[0];
-  // alert(file.name+" | "+file.size+" | "+file.type);
-  var formdata = new FormData();
-  formdata.append("id-card", file);
-  var ajax = new XMLHttpRequest();
-  ajax.upload.addEventListener("progress", progressHandler, false);
-  ajax.addEventListener("load", completeHandler, false);
-  ajax.addEventListener("error", errorHandler, false);
-  ajax.addEventListener("abort", abortHandler, false);
-  ajax.open("POST", "file_upload_parser.php"); // http://www.developphp.com/video/JavaScript/File-Upload-Progress-Bar-Meter-Tutorial-Ajax-PHP
-  //use file_upload_parser.php from above url
-  ajax.send(formdata);
-}
-
-function progressHandler(event) {
-  _("loaded_n_total").innerHTML = "Uploaded " + event.loaded + " bytes of " + event.total;
-  var percent = (event.loaded / event.total) * 100;
-  _("progressBar").value = Math.round(percent);
-  _("status").innerHTML = Math.round(percent) + "% uploaded... please wait";
-}
-
-function completeHandler(event) {
-  _("status").innerHTML = event.target.responseText;
-  _("progressBar").value = 0; //wil clear progress bar after successful upload
-}
-
-function errorHandler(event) {
-  _("status").innerHTML = "Upload Failed";
-}
-
-function abortHandler(event) {
-  _("status").innerHTML = "Upload Aborted";
-}
-      </script>
     </div>
   </section>
-
+  <h2>HTML5 File Upload Progress Bar Tutorial</h2>
+  <form id="upload_form" enctype="multipart/form-data" method="post">
+    <input type="file" name="file1" id="file1"><br>
+    <input type="button" value="Upload File" onclick="uploadFile()">
+    <h3 id="status"></h3>
+    <p id="loaded_n_total"></p>
+  </form>
   <footer class="bg-fume position-relative" id="contact">
     <div class="sectionfooter">
       <div class="container">
