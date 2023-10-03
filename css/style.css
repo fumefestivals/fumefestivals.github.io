@@ -3357,6 +3357,7 @@ textarea::placeholder{
   font-weight: normal;
   border-radius: 5px;
   border: 0px;
+  transition: 300ms;
 }
 
 

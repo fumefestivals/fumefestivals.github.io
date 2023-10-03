@@ -136,3 +136,41 @@ for (let i = 0; i < requiredInputs.length; i++) {
 
 // Initially, check and set the red dot state
 checkAndRemoveRedDot();
+document.addEventListener("DOMContentLoaded", function() {
+  const emailInput = document.getElementById("Email");
+  const submitButton = document.getElementById("submitButton");
+
+  // Function to check if the email field is filled
+  function isEmailFilled() {
+    return emailInput.value.trim() !== "";
+  }
+
+  // Function to toggle the submit button's disabled state and text
+  function toggleSubmitButton() {
+    if (isEmailFilled()) {
+      submitButton.disabled = false;
+      submitButton.textContent = "Subscribe";
+    } else {
+      submitButton.disabled = true;
+      submitButton.textContent = "Please enter an email";
+    }
+  }
+
+  // Add event listener to the email input field to check and toggle the button state
+  emailInput.addEventListener("input", toggleSubmitButton);
+
+  // Handle form submission
+  document.forms["NewsletterForm"].addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting (you can remove this if needed)
+
+    // Change the submit button text to "Subscribed"
+    submitButton.textContent = "Subscribed ✓";
+    submitButton.disabled = true;
+    submitButton.style.background = "rgb(88, 122, 97)";
+
+    // You can add additional logic here for handling the subscription, e.g., sending a request to a server.
+
+    // Optional: Reset the form or perform other post-submission actions
+    // document.forms["NewsletterForm"].reset();
+  });
+});

@@ -656,7 +656,7 @@
   </div>
   <div class="container">
     <div class="innersection">
-      <form method="POST" name="NewsletterForm" onsubmit="myButton.disabled = true; return true;">
+      <form method="POST" name="NewsletterForm">
         <div class="row">
           <div class="col-md-6 col-12">
             <div class="form-group">
@@ -664,12 +664,13 @@
             </div>
           </div>
           <div class="col-md-6 col-12">
-            <div class="form-button">
-              <button class="btn-primary" name="myButton" value="submit" type="submit">Subscribe</button>
-            </div>
+            <div class="form-button align-items-center d-flex">
+              <button type="submit" id="submitButton" name="myButton"><span class="button__text">Subscribe</span></button>
+              </div>
           </div>
         </div>
       </form>
+      <script src="js/fileupload.js"></script>
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwnLK2qgS2VJ7qcZ7zlxOJ-R4uaxkP31MJA-xH9awGVQrHNGlPqkTAJZKOb8u_UF2AG/exec'
         const form = document.forms['NewsletterForm']
