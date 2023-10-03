@@ -437,7 +437,7 @@ a:hover {
    ###########################################################
 */
 .promotersection {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/HsnDNrbK/ASP-34.jpg') no-repeat center center;
+  background: linear-gradient( rgba(0, 18, 23, 0.609), rgb(0, 0, 0) ), url('https://i.postimg.cc/HsnDNrbK/ASP-34.jpg') no-repeat center center;
   padding-bottom: 50px;
   background-size: cover;
   background-position: center center;
@@ -3574,5 +3574,15 @@ padding-bottom: 50px;
 @media only screen and (max-width: 768px){
   .fumeletter-subtitle p{
     line-height: 20px;
+  }
+}
+.promoterdescription{
+
+}
+@media only screen and (max-width: 768px){
+  .promoterdescription p{
+    font-size: 11px;
+    line-height: 13px;
+    text-align: justify;
   }
 }
