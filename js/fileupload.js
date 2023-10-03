@@ -31,5 +31,6 @@ function _(el){
     _("status").innerHTML = "Upload Aborted";
   }
   function myFunction() {
-    setInterval(function () { window.location.href = "../../index.html";}, 3000);
+    setInterval(function () { window.location.href = "../success.html";}, 3000);
+    myButton.disabled = true; return true;
 }
