@@ -87,6 +87,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Change the submit button text to "Loading..."
       submitButton.textContent = "Please Wait";
+      submitButton.style.background = "rgb(88, 122, 97)";
+      submitButton.disabled = true;
 
       // Simulate a delay (you can replace this with your actual form submission logic)
       setTimeout(function() {
@@ -148,11 +150,11 @@ document.addEventListener("DOMContentLoaded", function() {
   // Function to toggle the submit button's disabled state and text
   function toggleSubmitButton() {
     if (isEmailFilled()) {
-      submitButton.disabled = false;
-      submitButton.textContent = "Subscribe";
+      newsletterButton.disabled = false;
+      newsletterButton.textContent = "Subscribe";
     } else {
-      submitButton.disabled = true;
-      submitButton.textContent = "Please enter an email";
+      newsletterButton.disabled = true;
+      newsletterButton.textContent = "Please enter an email";
     }
   }
 
@@ -164,9 +166,9 @@ document.addEventListener("DOMContentLoaded", function() {
     event.preventDefault(); // Prevent the form from submitting (you can remove this if needed)
 
     // Change the submit button text to "Subscribed"
-    submitButton.textContent = "Subscribed ✓";
-    submitButton.disabled = true;
-    submitButton.style.background = "rgb(88, 122, 97)";
+    newsletterButton.textContent = "Subscribed ✓";
+    newsletterButton.disabled = true;
+    newsletterButton.style.background = "rgb(88, 122, 97)";
 
     // You can add additional logic here for handling the subscription, e.g., sending a request to a server.
 
