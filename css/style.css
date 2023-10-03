@@ -822,7 +822,11 @@ a:hover {
 }
 @media only screen and (max-width: 768px){
   .video-mobile{
+    height: 90vh;
     display:inherit;
+  }
+  .videoclass{
+    height: 90vh;
   }
   .video-fullsized{
     display: none;
