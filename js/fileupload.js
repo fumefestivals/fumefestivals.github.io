@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
         field9.value = "";
         
         toggleSubmitButton();
-      }, 3000); // Simulated 2-second delay; replace with your actual submission logic
+      }, 4000); // Simulated 2-second delay; replace with your actual submission logic
   });
 });
 // Get all required input fields and their associated span elements
