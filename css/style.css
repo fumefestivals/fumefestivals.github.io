@@ -3354,6 +3354,7 @@ textarea::placeholder{
   color: #fff;
   height: 40px;
   width: 100%;
+  font-weight: normal;
   border-radius: 5px;
   border: 0px;
 }
@@ -3368,6 +3369,32 @@ textarea::placeholder{
     transform: rotate(1turn);
   }
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Style the red dot */
+.required-dot {
+  color: red;
+  position: absolute;
+  left: 20px; /* Adjust the position as needed */
+  top: 40%; /* Adjust the position as needed */
+  transform: translateY(-50%);
+}
+
+/* Style the input fields */
+input.required {
+  padding-left: 20px; /* Ensure the red dot doesn't overlap with text */
+  position: relative;
+}
+
 .form-button button:hover{
   background: linear-gradient(37deg, rgb(103, 0, 117) 1%, rgb(60, 0, 172) 100%);
 }

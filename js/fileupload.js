@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(function() {
         // Your form submission logic here
         // This code will only execute when all fields are filled out.
-        alert("Form submitted!");
 
         // Clear the form or perform any other post-submission actions here
 
@@ -111,3 +110,29 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 3000); // Simulated 2-second delay; replace with your actual submission logic
   });
 });
+// Get all required input fields and their associated span elements
+const requiredInputs = document.querySelectorAll('.required');
+const requiredDotSpans = document.querySelectorAll('.required-dot');
+
+// Function to check if the input field is filled and remove the red dot
+function checkAndRemoveRedDot() {
+  for (let i = 0; i < requiredInputs.length; i++) {
+    const input = requiredInputs[i];
+    const dotSpan = requiredDotSpans[i];
+    
+    if (input.value.trim() !== '') {
+      dotSpan.style.display = 'none';
+    } else {
+      dotSpan.style.display = 'inline'; // Show the red dot if the input is empty
+    }
+  }
+}
+
+// Add event listeners to the input fields to check and remove the red dot
+for (let i = 0; i < requiredInputs.length; i++) {
+  const input = requiredInputs[i];
+  input.addEventListener('input', checkAndRemoveRedDot);
+}
+
+// Initially, check and set the red dot state
+checkAndRemoveRedDot();

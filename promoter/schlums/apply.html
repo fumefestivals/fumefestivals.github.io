@@ -109,39 +109,49 @@
         onsubmit="myFunction()"
       >
         <div class="row">
+          <!-- Add a CSS class 'required' to labels associated with required fields -->
+<!-- Repeat this for other required fields -->
+
           <div class="col-md-6">
             <div class="form-group">
-              <input type="Name" class="form-control" name="FirstName" id="FirstName" aria-describedby="Firstname" required placeholder="First Name">
+              <input type="text" class="form-control required" name="FirstName" id="FirstName" placeholder="First Name" aria-describedby="Firstname" required>
+              <span class="required-dot">*</span>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="Lastname" class="form-control" name="LastName" id="LastName" aria-describedby="LastName" required placeholder="Last Name">
+              <input type="text" class="form-control required" name="LastName" id="LastName" placeholder="Last Name" aria-describedby="LastName" required>
+              <span class="required-dot">*</span>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="Phone" class="form-control" name="PhoneNumber" id="PhoneNumber" aria-describedby="PhoneNumber" required placeholder="Phone Number">
+              <input type="number" class="form-control required" name="PhoneNumber" id="PhoneNumber" aria-describedby="PhoneNumber" required placeholder="Phone Number">
+              <span class="required-dot">*</span>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="Email" class="form-control" name="Email" id="Email" aria-describedby="Email" required placeholder="Email Adress">
+              <input type="Email" class="form-control required" name="Email" id="Email" aria-describedby="Email" required placeholder="Email Adress">
+              <span class="required-dot">*</span>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="number" class="form-control" name="Followers" id="Followers" aria-describedby="Followers" required placeholder="Instagram Followers">
+              <input type="number" class="form-control required" name="Followers" id="Followers" aria-describedby="Followers" required placeholder="Instagram Followers">
+              <span class="required-dot">*</span>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" name="Location" id="Location" aria-describedby="Location" required placeholder="Location">
+              <input type="text" class="form-control required" name="Location" id="Location" aria-describedby="Location" required placeholder="Location">
+              <span class="required-dot">*</span>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" class="form-control" name="Instagram" id="Instagram" aria-describedby="Instagram" required placeholder="Instagram Account">
+              <input type="text" class="form-control required" name="Instagram" id="Instagram" aria-describedby="Instagram" required placeholder="Instagram Account">
+              <span class="required-dot">*</span>
             </div>
           </div>
           <div class="col-md-6">
@@ -174,7 +184,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-7">
+          <div class="col-md-7 col-12">
             <div class="form-button align-items-center d-flex">
             <button type="submit" id="submitButton" name="myButton" onclick="this.classList.toggle('button--loading')"><span class="button__text">Save</span></button>
             </div>
