@@ -3566,3 +3566,13 @@ padding-bottom: 50px;
   filter: grayscale(0);
   transform: scale(0.95);
 }
+.fumeletter-subtitle p{
+  color: black; 
+  text-transform: uppercase; 
+  line-height: 10px;
+}
+@media only screen and (max-width: 768px){
+  .fumeletter-subtitle p{
+    line-height: 20px;
+  }
+}
