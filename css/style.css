@@ -160,6 +160,41 @@ h6, .h6 {
     text-align: center;
   }
 }
+.btn-readmore {
+  background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 11px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 200px;
+  height: 50px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px){
+  .btn-readmore {
+    background: linear-gradient(37deg, rgb(149, 0, 169) 1%, rgb(75, 0, 215) 100%);
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 600;
+    min-width: 120px;
+    height: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
 .button-apply-artist{
   max-width: 100px;
 }
@@ -3585,4 +3620,167 @@ padding-bottom: 50px;
     line-height: 13px;
     text-align: justify;
   }
+}
+.mobile-disable{
+  display: inherit;
+}
+@media only screen and (max-width: 768px){
+  .mobile-disable{
+    display: none;
+  }
+}
+.timeline-mobile .timeline{
+  position:relative;
+  margin:50px auto;
+  padding:40px 0;
+  width:1000px;
+  box-sizing:border-box;
+}
+.timeline-mobile .timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:90%;
+  max-height: 95%;
+  background:#c5c5c5;
+}
+.timeline-mobile .timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline-mobile .timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline-mobile .timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline-mobile .timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.timeline-mobile .content{
+  padding-bottom:20px;
+}
+.timeline-mobile .timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:rgb(117, 0, 144);
+  border-radius:50%;
+  box-shadow:0 0 0 3px rgba(56, 0, 80, 0.255);
+}
+.timeline-mobile .timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background:rgb(193, 0, 167);
+  border-radius:50%;
+  box-shadow:0 0 0 3px rgba(180, 0, 190, 0.2);
+}
+.timeline-mobile .timeline ul li h3{
+  padding:0;
+  margin:0;
+  font-size: 20px;
+  color:rgb(93, 0, 163);
+  font-weight:600;
+}
+.timeline-mobile .timeline ul li p{
+  margin:10px 0 0;
+  font-size: 10px;
+  text-align: justify;
+  padding:0;
+}
+.timeline-mobile .timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  color: #fff;
+  font-size:12px;
+}
+.timeline-mobile .timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  padding:8px 16px;
+  background: linear-gradient(37deg, rgba(0, 99, 169, 0.581) 1%, rgba(116, 0, 124, 0.621) 100%);
+  color:#fff;
+  border-radius: 10px;
+}
+.timeline-mobile .timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  padding:8px 16px;
+  background: linear-gradient(37deg, rgba(116, 0, 169, 0.581) 1%, rgba(0, 95, 124, 0.621) 100%);
+  color:#fff;
+  border-radius: 10px;
+}
+@media(max-width:1000px)
+{
+  .timeline-mobile .timeline{
+    width:100%;
+  }
+}
+@media(max-width:767px){
+  .timeline-mobile .timeline{
+    width:100%;
+    padding-bottom:0;
+  }
+  .timeline-mobile h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .timeline-mobile .timeline:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline-mobile .timeline ul li:nth-child(odd),
+  .timeline-mobile .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline-mobile .timeline ul li:nth-child(odd):before,
+  .timeline-mobile .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline-mobile .timeline ul li:nth-child(odd) .time,
+  .timeline-mobile .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+}
+.timeline-mobile{
+}
+@media only screen and (min-width: 768px){
+  .timeline-mobile{
+    display: none;
+  }
+}
+.timeline-mobile .hidden-item {
+  display: none;
 }
