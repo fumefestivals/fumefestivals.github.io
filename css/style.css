@@ -3784,3 +3784,28 @@ padding-bottom: 50px;
 .timeline-mobile .hidden-item {
   display: none;
 }
+.promoter-benefits{
+  padding-top: 30px;
+}
+.promoter-benefits h4{
+  text-transform: uppercase;
+  color: #79006b;
+  padding-bottom: 10px;
+}
+.promoter-benefits p{
+  font-size: 12px;
+}
+.promoter-benefits i{
+  font-size: 10px;
+  padding-right: 4px;
+}
+@media only screen and (max-width: 768px){
+  .promoter-benefits h4{
+    font-size: 18px;
+  }
+  .promoter-benefits p{
+    font-size: 10px;
+  }
+  .promoter-benefits p{
+  }
+}
