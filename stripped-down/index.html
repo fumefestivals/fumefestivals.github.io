@@ -403,12 +403,13 @@
         <div class="col-md-6 col-12">
           <div class="bg-white p-4">
             <h3>Contact us</h3>
-            <form action="#">
+            <form id="contactform" action="https://formspree.io/f/mbjebppa" method="POST">
               <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Full name">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Email address">
+              <input type="text" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address">
               <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
               <div class="button1">
-                <button style="font-size: 14px" class="btn btn-primary" type="submit">Send</button>
+                <button style="font-size: 14px" class="btn btn-primary" id="my-form-button" type="submit">Send</button>
+                <p id="my-form-status"></p>
               </div>
             </form>
           </div>
@@ -441,6 +442,38 @@
 <!-- /footer -->
 
 <!-- jQuery -->
+<script>
+  var form = document.getElementById("contactform");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="plugins/bootstrap/bootstrap.min.js"></script>
@@ -472,6 +505,5 @@
 // Your custom settings go here
 });
 </script>
-
 </body>
 </html>
