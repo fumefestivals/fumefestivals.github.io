@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const field6 = document.getElementById("Location");
   const field7 = document.getElementById("Instagram");
   const field8 = document.getElementById("promotertype");
-  const field9 = document.getElementById("file1");
   const submitButton = document.getElementById("submitButton");
 
   // Function to check if all fields are filled
@@ -56,8 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
       field5.value.trim() !== "" && 
       field6.value.trim() !== "" && 
       field7.value.trim() !== "" && 
-      field8.value.trim() !== "" && 
-      field9.value.trim() !== "";
+      field8.value.trim() !== "";
   }
 
   // Function to toggle the submit button's disabled state and text
@@ -76,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
   field6.addEventListener("input", toggleSubmitButton);
   field7.addEventListener("input", toggleSubmitButton);
   field8.addEventListener("input", toggleSubmitButton);
-  field9.addEventListener("input", toggleSubmitButton);
 
   // Initially, check and set the submit button state
   toggleSubmitButton();
@@ -106,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function() {
         field6.value = "";
         field7.value = "";
         field8.value = "";
-        field9.value = "";
         
         toggleSubmitButton();
       }, 4000); // Simulated 2-second delay; replace with your actual submission logic
