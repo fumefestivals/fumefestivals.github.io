@@ -3786,6 +3786,7 @@ padding-bottom: 50px;
 }
 .promoter-benefits{
   padding-top: 30px;
+  cursor: default;
 }
 .promoter-benefits h4{
   text-transform: uppercase;
