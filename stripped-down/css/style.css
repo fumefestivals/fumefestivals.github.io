@@ -3810,3 +3810,19 @@ padding-bottom: 50px;
   .promoter-benefits p{
   }
 }
+.contactForm-button{
+
+}
+@media only screen and (max-width: 768px){
+  .contactForm-button{
+    font-size: 13px !important;
+    width: 100%;
+    display: block;
+  }
+  .contactForm-button button{
+    font-size: 10px !important;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
