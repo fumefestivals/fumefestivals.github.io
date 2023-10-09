@@ -12,6 +12,9 @@ body {
 }
 section{
   overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
 }
 
 p {
@@ -346,8 +349,8 @@ a:hover {
 }
 
 .section {
-  padding-top: 110px;
-  padding-bottom: 100px;
+  margin: 0;
+  padding: 0;
 }
 
 /* ###########################################################
@@ -2355,6 +2358,8 @@ CSS
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  background-color: #000;
+  background: #000;
 }
 
 .custom-shape-divider-top-1680561536-black svg {
