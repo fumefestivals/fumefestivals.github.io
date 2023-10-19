@@ -298,7 +298,7 @@
     </div>
     <div class="col-xl-3 col-6 justify-content-center d-flex">
       <div class="artistselectioncard">
-      <a><img src="https://i.postimg.cc/7P1Sghz5/300671282-821867475495471-6779027489440081131-n.jpg"></a>
+      <a><img src="https://i.postimg.cc/mk02SpWL/Whats-App-Image-2023-08-08-at-09-02-18.jpg"></a>
       <p>Hopex</p>
       </div>
     </div>
@@ -312,7 +312,7 @@
   <div class="row artistscard">
     <div class="col-xl-3 col-6 justify-content-center d-flex">
       <div class="artistselectioncard">
-      <a><img src="https://i.postimg.cc/nLHwRHkr/356630550-18376053109038150-2896963124333587037-n.jpg"></a>
+      <a><img src="https://i.postimg.cc/HWyk3Hjd/316998952-1362242747848954-8464674769948937674-n.jpg"></a>
       <p>Budo202</p>
       </div>
     </div>
@@ -382,19 +382,41 @@
             </div>
           </div>
           </div>
-        <div class="col-md-6 col-12">
-          <div class="bg-white p-4">
-            <h3>Contact us</h3>
-            <form action="#">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Full name">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Email address">
-              <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
-              <div class="button1">
-                <button style="font-size: 14px" class="btn btn-primary" type="submit">Send</button>
-              </div>
-            </form>
+          <div class="col-md-6 col-12">
+            <div class="bg-white p-4">
+              <h3>Contact us</h3>
+              <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec" method="POST">
+                <div class="row">
+                  <div class="col-12">
+                    <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name">
+                  </div>
+                  <div class="col-12">
+                    <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address">
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <input type="hidden" style="display:nne;" name="uniqueNumber" id="uniqueNumber">
+                  </div>
+                </div>
+                <div class="button1">
+                  <button style="font-size: 14px" class="btn btn-primary" type="submit" id="submitButton" disabled>Send</button>
+                </div>
+              </form>
+              <script>
+                const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec'; // Update with the URL for Form 2
+                const form2 = document.forms['contactForm'];
+              
+                form2.addEventListener('submit', e => {
+                  e.preventDefault();
+                  fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
+                    .then(response => console.log('Success Form 2!', response))
+                    .catch(error => console.error('Error Form 2!', error.message));
+                });
+              </script>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
