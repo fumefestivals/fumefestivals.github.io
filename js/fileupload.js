@@ -108,6 +108,73 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 4000); // Simulated 2-second delay; replace with your actual submission logic
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const djForm = document.getElementById("DJContestApplicationForm");
+  const djField1 = document.getElementById("FirstName");
+  const djField2 = document.getElementById("LastName");
+  const djField3 = document.getElementById("DjName");
+  const djField4 = document.getElementById("Link");
+  const djField5 = document.getElementById("Instagram");
+  const djSubmitButton = document.getElementById("submitButton"); // Changed this to match your submit button ID
+
+  // Function to check if all DJ contest fields are filled
+  function areDJFieldsFilled() {
+    return (
+      djField1.value.trim() !== "" &&
+      djField2.value.trim() !== "" &&
+      djField3.value.trim() !== "" &&
+      djField4.value.trim() !== "" &&
+      djField5.value.trim() !== ""
+    );
+  }
+
+  // Function to toggle the DJ contest submit button's disabled state and text
+  function toggleDJSubmitButton() {
+    const isFilled = areDJFieldsFilled();
+    djSubmitButton.disabled = !isFilled;
+    djSubmitButton.textContent = isFilled
+      ? "Apply"
+      : "Please fill out the required information";
+  }
+
+  // Add event listeners to DJ contest form fields to check and toggle the button state
+  djField1.addEventListener("input", toggleDJSubmitButton);
+  djField2.addEventListener("input", toggleDJSubmitButton);
+  djField3.addEventListener("input", toggleDJSubmitButton);
+  djField4.addEventListener("input", toggleDJSubmitButton);
+  djField5.addEventListener("input", toggleDJSubmitButton);
+
+  // Initially, check and set the DJ contest submit button state
+  toggleDJSubmitButton();
+
+  // Handle DJ contest form submission
+  djForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting (you can remove this if needed)
+
+    // Change the DJ contest submit button text to "Loading..."
+    djSubmitButton.textContent = "Please Wait";
+    djSubmitButton.style.background = "rgb(88, 122, 97)";
+    djSubmitButton.disabled = true;
+
+    // Simulate a delay (you can replace this with your actual form submission logic)
+    setTimeout(function() {
+      // Your DJ contest form submission logic here
+      // This code will only execute when all DJ contest fields are filled out.
+
+      // Clear the DJ contest form or perform any other post-submission actions here
+
+      // Re-enable the input fields after submission
+      djField1.value = "";
+      djField2.value = "";
+      djField3.value = "";
+      djField4.value = "";
+      djField5.value = "";
+
+      toggleDJSubmitButton();
+    }, 4000); // Simulated 4-second delay; replace with your actual submission logic
+  });
+});
+
 // Get all required input fields and their associated span elements
 const requiredInputs = document.querySelectorAll('.required');
 const requiredDotSpans = document.querySelectorAll('.required-dot');
