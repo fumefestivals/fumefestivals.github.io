@@ -96,65 +96,65 @@
         </div>
       </div>
       <form class="DJContestApplicationForm"
-        method="POST" 
-        action="https://script.google.com/macros/s/AKfycbzWipKSeBr0cjTLoeKy-ERZAqzOf_l6EjO0F3XKtGn77If6dUtDuKz3iG7DMMU399TawQ/exec"
-        name="DJContestApplicationForm"
-        enctype="multipart/form-data"
-        onsubmit="myFunction()"
-      >
-        <div class="row">
-
+      method="POST" 
+      action="https://script.google.com/macros/s/AKfycbxDCIKi-TMyAquoMAJrXZ-qjm431DMXls_nkfV9PWKGmjXEIAXje8-8nX12_k_PavSB/exec"
+      name="DJContestApplicationForm"
+      enctype="multipart/form-data"
+      onsubmit="myFunction()">
+      <div class="row">
           <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" class="form-control required" name="FirstName" id="FirstName" placeholder="First Name" aria-describedby="Firstname" required>
-              <span class="required-dot">*</span>
-            </div>
+              <div class="form-group">
+                  <input type="text" class="form-control required" name="FirstName" id="FirstName" placeholder="First Name" aria-describedby="Firstname" required>
+                  <span class="required-dot">*</span>
+              </div>
           </div>
           <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" class="form-control required" name="LastName" id="LastName" placeholder="Last Name" aria-describedby="LastName" required>
-              <span class="required-dot">*</span>
-            </div>
+              <div class="form-group">
+                  <input type="text" class="form-control required" name="LastName" id="LastName" placeholder="Last Name" aria-describedby="LastName" required>
+                  <span class="required-dot">*</span>
+              </div>
           </div>
           <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" class="form-control required" name="DJName" id="DjName" aria-describedby="DjName" required placeholder="Dj Name">
-              <span class="required-dot">*</span>
-            </div>
+              <div class="form-group">
+                  <input type="text" class="form-control required" name="DJName" id="DjName" aria-describedby="DjName" required placeholder="Dj Name">
+                  <span class="required-dot">*</span>
+              </div>
           </div>
           <div class="col-md-6">
-            <div class="form-group">
-              <input type="Email" class="form-control required" name="Email" id="Email" aria-describedby="Email" required placeholder="Email Adress">
-              <span class="required-dot">*</span>
-            </div>
+              <div class="form-group">
+                  <input type="email" class="form-control required" name="Email" id="Email" aria-describedby="Email" required placeholder="Email Address">
+                  <span class="required-dot">*</span>
+              </div>
           </div>
           <div class="col-md-12">
-            <div class="form-group">
-              <input type="text" class="form-control required" name="Link" id="Link" aria-describedby="Link" required placeholder="Link to your Mixtape (Only Soundcloud)">
-              <span class="required-dot">*</span>
-            </div>
+              <div class="form-group">
+                  <input type="text" class="form-control required" name="Link" id="Link" aria-describedby="Link" required placeholder="Link to your Mixtape (Only Soundcloud)">
+                  <span class="required-dot">*</span>
+              </div>
           </div>
           <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" class="form-control required" name="Instagram" id="Instagram" aria-describedby="Instagram" required placeholder="Instagram Account">
-              <span class="required-dot">*</span>
-            </div>
+              <div class="form-group">
+                  <input type="text" class="form-control required" name="Instagram" id="Instagram" aria-describedby="Instagram" required placeholder="Instagram Account">
+                  <span class="required-dot">*</span>
+              </div>
           </div>
-        <div class="row">
+      </div>
+      <div class="row">
           <div class="col-md-7 col-12">
-            <div class="form-button align-items-center d-flex">
-            <button type="submit" id="submitButton" name="myButton"><span class="button__text"></span></button>
-            </div>
+              <div class="form-button align-items-center d-flex">
+                  <button type="submit" id="submitButton" name="myButton" disabled><span class="button__text">Please fill out all the information</span></button>
+              </div>
           </div>
           <div class="col-12">
-            <p style="font-size: 9px; padding-top: 20px;">We want to inform you that we require some time to process all applications. Please understand that due to the high volume of requests, we cannot respond individually to each one. If your application is considered, you will be contacted and provided with all the necessary information.</p>
+              <p style="font-size: 9px; padding-top: 20px;">We want to inform you that we require some time to process all applications. Please understand that due to the high volume of requests, we cannot respond individually to each one. If your application is considered, you will be contacted and provided with all the necessary information.</p>
           </div>
-        </div>
-      </form>
-      <script src="../../js/fileupload.js"></script>
+      </div>
+  </form>
+  <script src="../js/dj-contest.js"></script>
+      
       <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWipKSeBr0cjTLoeKy-ERZAqzOf_l6EjO0F3XKtGn77If6dUtDuKz3iG7DMMU399TawQ/exec'
-        const form = document.forms['PromoterApplicationForm']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxDCIKi-TMyAquoMAJrXZ-qjm431DMXls_nkfV9PWKGmjXEIAXje8-8nX12_k_PavSB/exec'
+        const form = document.forms['DJContestApplicationForm']
       
         form.addEventListener('submit', e => {
           e.preventDefault()
