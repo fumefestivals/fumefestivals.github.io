@@ -27,7 +27,7 @@ function getCookie(cname) {
 if (getCookie("popupClosed") !== "true") {
     setTimeout(function () {
         showPopup();
-    }, 5000);
+    }, 10000);
 }
 
 function showPopup() {
