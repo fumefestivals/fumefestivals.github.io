@@ -3884,3 +3884,36 @@ padding-bottom: 50px;
           border-radius: 5px;
       }
 }
+/* Style for the cookie banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.cookie-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cookie-button {
+  display: inline-block;
+  background: #009688;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 10px;
+  text-decoration: none;
+}
+
+/* Fix for the button not showing up */
+#accept-cookies {
+  display: inline-block;
+}
