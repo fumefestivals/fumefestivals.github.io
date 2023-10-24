@@ -38,7 +38,14 @@
 </head>
 
 <body data-aos="fade-in" data-aos-duration="1000" data-aos-once='true'>
-  
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+      <span class="close-button" onclick="closePopup()">X</span>
+      <h1 style="text-transform: uppercase; font-size: 25px; text-align: left;">DJ Contest UP and Running</h1>
+      <img style="max-width: 100%; margin-bottom: 30px; margin-top: 30px; border-radius: 10px;" src="https://i.postimg.cc/44PczCSV/Spook-Banner.jpg">
+      <p style="text-align: left;">Show us your talent and win a Spot on our Mainstage at the second Edition of Spook</p>
+      <button class="btn-primary" onclick="redirectToContestPage()">Join Contest</button>
+  </div>
   <header class="navigation fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html"><img src="https://i.postimg.cc/L5ZQ53s1/Fume-Logo-Kopie.png" alt="Fume Logo"></a>
@@ -516,6 +523,7 @@
 <script>
   AOS.init();
 </script>
+<script src="js/popup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
 <script>
     var lazyLoadInstance = new LazyLoad({
