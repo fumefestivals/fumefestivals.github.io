@@ -1845,8 +1845,32 @@ footer h4:hover{
   object-fit: cover;
   height: 80vh;
 }
+.eventsection-ravenroll {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/cJWyvnxc/image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
+.eventsection-lutadordeelite {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/cJWyvnxc/image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
 .eventsection-spook {
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/7LK3t8vK/ASP-102-min.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
+.eventsection-spook-1 {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/B6cQypXR/image.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: local;
   position: relative;
@@ -1857,7 +1881,13 @@ footer h4:hover{
   .eventsection-schlums {
     height: 70vh;
   }
+  .eventsection-raveroll {
+    height: 70vh;
+  }
   .eventsection-spook {
+    height: 70vh;
+  }
+  .eventsection-spook-1 {
     height: 70vh;
   }
 }
@@ -2523,14 +2553,18 @@ width: 100%;
   margin-top: -120px;
   margin-bottom: -350px;
 }
-.color-schlums {
-  background: linear-gradient(37deg, rgb(0, 139, 79) 1%, rgb(255, 98, 0) 100%) !important;
-}
 .color-spook {
   background: linear-gradient(37deg, rgb(255, 0, 0) 1%, rgb(62, 0, 0) 100%) !important;
 }
 .color-spook-2 {
   background: linear-gradient(37deg, rgb(52, 0, 0) 1%, rgb(62, 0, 0) 100%) !important;
+}
+.color-spook .btn:hover{
+  background: linear-gradient(37deg, rgb(100, 0, 0) 1%, rgb(33, 0, 0) 100%) !important;
+}
+
+.color-schlums {
+  background: linear-gradient(37deg, rgb(0, 139, 79) 1%, rgb(255, 98, 0) 100%) !important;
 }
 .color-schlums-2 {
   background: linear-gradient(107deg, rgb(0, 139, 79) 1%, rgb(255, 98, 0) 100%) !important;
@@ -2538,9 +2572,27 @@ width: 100%;
 .color-schlums .btn:hover{
   background: linear-gradient(37deg, rgb(0, 107, 60) 1%, rgb(168, 64, 0) 100%) !important;
 }
-.color-spook .btn:hover{
-  background: linear-gradient(37deg, rgb(100, 0, 0) 1%, rgb(33, 0, 0) 100%) !important;
+
+.color-ravenroll {
+  background: linear-gradient(37deg, rgb(143, 186, 0) 1%, rgb(100, 123, 0) 100%) !important;
 }
+.color-ravenroll-2 {
+  background: linear-gradient(37deg, rgb(0, 117, 4) 1%, rgb(99, 141, 0) 100%) !important;
+}
+.color-ravenroll .btn:hover{
+  background: linear-gradient(37deg, rgb(0, 117, 4) 1%, rgb(99, 141, 0) 100%) !important;
+}
+
+.color-lutadordeelite {
+  background: linear-gradient(37deg, rgb(79, 0, 0) 1%, rgb(45, 16, 16) 100%) !important;
+}
+.color-lutadordeelite-2 {
+  background: linear-gradient(37deg, rgb(53, 0, 0) 1%, rgb(27, 8, 8) 100%) !important;
+}
+.color-lutadordeelite .btn:hover{
+  background: linear-gradient(37deg, rgb(53, 0, 0) 1%, rgb(27, 8, 8) 100%) !important;
+}
+
 .blanksection{
   height: 100vh;
 }
