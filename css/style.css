@@ -1893,6 +1893,14 @@ footer h4:hover{
   object-fit: cover;
   height: 80vh;
 }
+.eventsection-schoolsout {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/13d1tWCh/image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
 @media only screen and (max-width: 768px){
   .eventsection-schlums {
     height: 70vh;
@@ -1910,6 +1918,9 @@ footer h4:hover{
     height: 70vh;
   }
   .eventsection-westside {
+    height: 70vh;
+  }
+  .eventsection-schoolsout {
     height: 70vh;
   }
 }
@@ -2633,6 +2644,16 @@ width: 100%;
 }
 .color-westside .btn:hover{
   background: linear-gradient(37deg,  rgb(91, 0, 0) 1%, rgb(33, 0, 0) 100%) !important;
+}
+
+.color-schoolsout {
+  background: linear-gradient(37deg, rgb(0, 108, 171) 1%, rgb(0, 49, 78) 100%) !important;
+}
+.color-schoolsout-2 {
+  background: linear-gradient(37deg,  rgb(0, 62, 97) 1%, rgb(0, 27, 43) 100%) !important;
+}
+.color-schoolsout .btn:hover{
+  background: linear-gradient(37deg,  rgb(0, 62, 97) 1%, rgb(0, 27, 43) 100%) !important;
 }
 
 .blanksection{
