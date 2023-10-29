@@ -1845,6 +1845,14 @@ footer h4:hover{
   object-fit: cover;
   height: 80vh;
 }
+.eventsection-schlums-narrenball {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://dub01pap003files.storage.live.com/y4mEOHF9uGSMhywUEyB-onHxNbQCchq6x6lUby4K5SujQk7DiAISgX4K1iL7FN1Bi-ztjD31-0JsYcPsSZJtNq8CWLESbhdRObp2wTOUx1HM-Y194fg2kHu0VZkQ2Ip5UCmicmPQ1mw6towIoupXKXyL8JiErRu5-g4nBweGXIxObY74tCb2tD5Q-snLF6dVCofL1gePGr87SKGImtsl5VuIA?encodeFailures=1&width=600&height=750') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
 .eventsection-ravenroll {
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/cJWyvnxc/image.jpg') no-repeat center center;
   background-size: cover;
@@ -1877,8 +1885,19 @@ footer h4:hover{
   object-fit: cover;
   height: 80vh;
 }
+.eventsection-westside {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/B6cQypXR/image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
 @media only screen and (max-width: 768px){
   .eventsection-schlums {
+    height: 70vh;
+  }
+  .eventsection-schlums-narrenball {
     height: 70vh;
   }
   .eventsection-raveroll {
@@ -1888,6 +1907,9 @@ footer h4:hover{
     height: 70vh;
   }
   .eventsection-spook-1 {
+    height: 70vh;
+  }
+  .eventsection-westside {
     height: 70vh;
   }
 }
@@ -2573,6 +2595,16 @@ width: 100%;
   background: linear-gradient(37deg, rgb(0, 107, 60) 1%, rgb(168, 64, 0) 100%) !important;
 }
 
+.color-schlums-narrenball {
+  background: linear-gradient(37deg, rgb(182, 0, 70) 1%, rgb(0, 200, 176) 100%) !important;
+}
+.color-schlums-narrenball-2 {
+  background: linear-gradient(107deg, rgb(127, 0, 57) 1%, rgb(0, 100, 94) 100%) !important;
+}
+.color-schlums-narrenball .btn:hover{
+  background: linear-gradient(37deg, rgb(127, 0, 57) 1%, rgb(0, 100, 94) 100%) !important;
+}
+
 .color-ravenroll {
   background: linear-gradient(37deg, rgb(143, 186, 0) 1%, rgb(100, 123, 0) 100%) !important;
 }
@@ -2591,6 +2623,16 @@ width: 100%;
 }
 .color-lutadordeelite .btn:hover{
   background: linear-gradient(37deg, rgb(53, 0, 0) 1%, rgb(27, 8, 8) 100%) !important;
+}
+
+.color-westside {
+  background: linear-gradient(37deg, rgb(155, 0, 0) 1%, rgb(78, 0, 0) 100%) !important;
+}
+.color-westside-2 {
+  background: linear-gradient(37deg, rgb(91, 0, 0) 1%, rgb(33, 0, 0) 100%) !important;
+}
+.color-westside .btn:hover{
+  background: linear-gradient(37deg,  rgb(91, 0, 0) 1%, rgb(33, 0, 0) 100%) !important;
 }
 
 .blanksection{
