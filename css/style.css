@@ -1901,6 +1901,31 @@ footer h4:hover{
   object-fit: cover;
   height: 80vh;
 }
+.eventsection-moneyrain {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/nrdLxrqN/image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
+.eventsection-underground {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/s2wf71Nx/image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
+.eventsection-blacklight {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/GmnvSShY/image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-position: top;
+  object-fit: cover;
+  height: 80vh;
+}
 @media only screen and (max-width: 768px){
   .eventsection-schlums {
     height: 70vh;
@@ -1921,6 +1946,12 @@ footer h4:hover{
     height: 70vh;
   }
   .eventsection-schoolsout {
+    height: 70vh;
+  }
+  .eventsection-moneyrain {
+    height: 70vh;
+  }
+  .eventsection-underground {
     height: 70vh;
   }
 }
@@ -2654,6 +2685,46 @@ width: 100%;
 }
 .color-schoolsout .btn:hover{
   background: linear-gradient(37deg,  rgb(0, 62, 97) 1%, rgb(0, 27, 43) 100%) !important;
+}
+
+.color-springfestival {
+  background: linear-gradient(37deg, rgb(90, 0, 93) 1%, rgb(202, 172, 0) 60%, rgb(44, 201, 0) 100%) !important;
+}
+.color-springfestival-2 {
+  background: linear-gradient(37deg, rgb(56, 0, 58) 1%, rgb(106, 90, 0) 60%, rgb(16, 74, 0) 100%) !important;
+}
+.color-springfestival .btn-primary:hover{
+  background: linear-gradient(37deg, rgb(56, 0, 58) 1%, rgb(106, 90, 0) 60%, rgb(16, 74, 0) 100%) !important;
+}
+
+.color-moneyrain {
+  background: linear-gradient(37deg, rgb(0, 30, 108) 1%, rgb(146, 0, 219) 100%) !important;
+}
+.color-moneyrain-2 {
+  background: linear-gradient(37deg,  rgb(0, 16, 57) 1%, rgb(40, 0, 61) 100%) !important;
+}
+.color-moneyrain .btn:hover{
+  background: linear-gradient(37deg,  rgb(0, 16, 57) 1%, rgb(40, 0, 61) 100%) !important;
+}
+
+.color-underground {
+  background: linear-gradient(37deg, rgb(15, 178, 0) 1%, rgb(18, 0, 118) 100%) !important;
+}
+.color-underground-2 {
+  background: linear-gradient(37deg, rgb(7, 86, 0) 1%, rgb(7, 0, 47) 100%) !important;
+}
+.color-underground .btn:hover{
+  background: linear-gradient(37deg, rgb(7, 86, 0) 1%, rgb(7, 0, 47) 100%) !important;
+}
+
+.color-blacklight {
+  background: linear-gradient(37deg, rgb(15, 178, 0) 1%, rgb(152, 0, 86) 100%) !important;
+}
+.color-blacklight-2 {
+  background: linear-gradient(37deg, rgb(4, 52, 0) 1%, rgb(76, 0, 43) 100%) !important;
+}
+.color-blacklight .btn:hover{
+  background: linear-gradient(37deg, rgb(4, 52, 0) 1%, rgb(76, 0, 43) 100%) !important;
 }
 
 .blanksection{
