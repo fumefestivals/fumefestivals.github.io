@@ -1,48 +1,20 @@
-function displayImages() {
-  const imageContainer = document.getElementById('imageContainer');
-  const folderPath = '../galleries/costume-contest'; // Replace with the path to your folder
+<script>
+// Lazy load images using Intersection Observer
+const gallery = document.getElementById("lazy-load-gallery");
+const images = gallery.querySelectorAll("img[data-src]");
 
-  fetch(folderPath)
-    .then(response => response.text())
-    .then(data => {
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(data, 'text/html');
-      const images = Array.from(xmlDoc.querySelectorAll('a')).filter(a =>
-        a.href.match(/\.(jpg|jpeg|png|gif)$/)
-      );
-
-      images.forEach(image => {
-        const imageUrl = image.href;
-        const imgElement = document.createElement('img');
-        imgElement.src = imageUrl;
-        imgElement.alt = imageUrl;
-        imgElement.loading = 'lazy';
-        imgElement.setAttribute('crossorigin', 'anonymous'); // Add crossorigin attribute
-
-        const downloadLink = document.createElement('a');
-        downloadLink.href = imageUrl;
-        downloadLink.className = 'download-link';
-        downloadLink.download = ''; // This will trigger the download
-
-        imgElement.addEventListener('mouseenter', () => {
-          imgElement.style.transform = 'scale(1.05)';
-          imgElement.style.filter = 'brightness(80%)';
-          downloadLink.style.display = 'block';
-        });
-
-        imgElement.addEventListener('mouseleave', () => {
-          imgElement.style.transform = 'scale(1)';
-          imgElement.style.filter = 'brightness(100%)';
-          downloadLink.style.display = 'none';
-        });
-
-        imageContainer.appendChild(imgElement);
-        imageContainer.appendChild(downloadLink);
-      });
-    })
-    .catch(error => {
-      console.error('Error fetching images:', error);
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.getAttribute("data-src");
+            img.removeAttribute("data-src");
+            observer.unobserve(img);
+        }
     });
-}
+});
 
-displayImages();
+images.forEach(img => {
+    observer.observe(img);
+});
+</script>

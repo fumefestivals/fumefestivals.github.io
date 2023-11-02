@@ -4094,35 +4094,23 @@ padding-bottom: 50px;
     margin-bottom: 20px;
   }
 }
-#imageContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-}
-
-.image-container {
-  position: relative;
-  overflow: hidden;
-}
-
-img {
   max-width: 100%;
-  height: auto;
-  transition: transform 0.2s;
-  filter: brightness(100%);
-  cursor: pointer;
+  justify-content: center;
+}
+.image-gallery a{
+  max-width: 300px;
+}
+.image-gallery img{
+  width: 100%;
+  object-fit: cover;
 }
 
-.download-link {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3000;
-  cursor: pointer;
-}
-
-.image-container:hover .download-link {
-  display: block;
+@media (max-width: 768px) {
+  .image-gallery a {
+      width: 100%; /* Single column */
+  }
 }
