@@ -1,17 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const gallery = document.getElementById('gallery');
-  const anchors = gallery.getElementsByTagName('a');
 
-  for (const anchor of anchors) {
-      anchor.addEventListener('mouseenter', function () {
-          const image = new Image();
-          image.src = anchor.getAttribute('data-src');
-          image.alt = anchor.textContent;
-          anchor.appendChild(image);
-          anchor.style.display = 'block';
-      });
-  }
-});
 function lazyLoadImages(container) {
   const io = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
@@ -34,3 +21,20 @@ const imageGallery = document.getElementById('gallery');
 
 // Lazy load all images inside the container
 lazyLoadImages(imageGallery);
+
+const gallery = document.getElementById("gallery");
+const imageLinks = gallery.querySelectorAll("a");
+
+imageLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        const imageUrl = link.getAttribute("data-src");
+        const fileName = link.getAttribute("download");
+        const a = document.createElement("a");
+        a.href = imageUrl;
+        a.download = fileName;
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+});

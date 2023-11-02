@@ -163,28 +163,8 @@
         <a href="#"><img data-src="https://i.postimg.cc/W3Myfmq9/Spook-Contest-08057.jpg" alt="Spook-Contest-08057"/></a><br/><br/>
         <a href="#"><img data-src="https://i.postimg.cc/XJMh81qG/Spook-Contest-08058.jpg" alt="Spook-Contest-08058"/></a><br/><br/>
         <a href="#"><img data-src="https://i.postimg.cc/L5DbmHTL/Spook-Contest-08059.jpg" alt="Spook-Contest-08059"/></a><br/><br/>
-        
-
         <!-- Add more images as needed -->
     </div>
-  <script>
-    const gallery = document.getElementById("gallery");
-    const imageLinks = gallery.querySelectorAll("a");
-
-    imageLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            const imageUrl = link.getAttribute("data-src");
-            const fileName = link.getAttribute("download");
-            const a = document.createElement("a");
-            a.href = imageUrl;
-            a.download = fileName;
-            a.style.display = "none";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        });
-    });
-</script>
 </section>
 <!-- footer -->
 <footer class="bg-fume position-relative color-spook-2" id="contact">
