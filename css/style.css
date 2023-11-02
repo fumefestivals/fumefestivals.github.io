@@ -4107,6 +4107,10 @@ padding-bottom: 50px;
 .image-gallery img{
   width: 100%;
   object-fit: cover;
+  transition: 300ms;
+}
+.image-gallery img:hover{
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -4115,3 +4119,11 @@ padding-bottom: 50px;
   }
 }
 /* Add your CSS styles here */
+.zugroß{
+  
+}
+@media only screen and (min-width:768px) {
+  .zugroß h3{
+    font-size: 24px;
+  }
+}
