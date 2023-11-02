@@ -4110,16 +4110,17 @@ img {
   height: auto;
   transition: transform 0.2s;
   filter: brightness(100%);
+  cursor: pointer;
 }
 
 .download-link {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
   z-index: 3000;
-  cursor: pointer; /* Add cursor property to make it clear the link is clickable */
+  cursor: pointer;
 }
 
 .image-container:hover .download-link {

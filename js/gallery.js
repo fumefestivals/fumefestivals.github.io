@@ -1,6 +1,6 @@
 function displayImages() {
   const imageContainer = document.getElementById('imageContainer');
-  const folderPath = '../galleries/costume-contest';
+  const folderPath = '../galleries/costume-contest'; // Replace with the path to your folder
 
   fetch(folderPath)
     .then(response => response.text())
@@ -17,11 +17,11 @@ function displayImages() {
         imgElement.src = imageUrl;
         imgElement.alt = imageUrl;
         imgElement.loading = 'lazy';
+        imgElement.setAttribute('crossorigin', 'anonymous'); // Add crossorigin attribute
 
         const downloadLink = document.createElement('a');
         downloadLink.href = imageUrl;
         downloadLink.className = 'download-link';
-        downloadLink.textContent = 'Download';
         downloadLink.download = ''; // This will trigger the download
 
         imgElement.addEventListener('mouseenter', () => {
@@ -34,11 +34,6 @@ function displayImages() {
           imgElement.style.transform = 'scale(1)';
           imgElement.style.filter = 'brightness(100%)';
           downloadLink.style.display = 'none';
-        });
-
-        // Add a click event to initiate the download
-        imgElement.addEventListener('click', () => {
-          downloadLink.click();
         });
 
         imageContainer.appendChild(imgElement);
