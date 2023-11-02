@@ -22,19 +22,28 @@ const imageGallery = document.getElementById('gallery');
 // Lazy load all images inside the container
 lazyLoadImages(imageGallery);
 
-const gallery = document.getElementById("gallery");
-const imageLinks = gallery.querySelectorAll("a");
+document.addEventListener("DOMContentLoaded", function () {
+  const imageLinks = document.querySelectorAll(".image-gallery a");
+  imageLinks.forEach(function (link) {
+      link.addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent the default behavior of the link
+          const imgSrc = link.querySelector("img").getAttribute("data-src");
+          const imgAlt = link.querySelector("img").getAttribute("alt");
 
-imageLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        const imageUrl = link.getAttribute("data-src");
-        const fileName = link.getAttribute("download");
-        const a = document.createElement("a");
-        a.href = imageUrl;
-        a.download = fileName;
-        a.style.display = "none";
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-    });
+          const xhr = new XMLHttpRequest();
+          xhr.responseType = 'blob';
+          xhr.onload = function () {
+              const a = document.createElement('a');
+              a.href = window.URL.createObjectURL(xhr.response);
+              a.download = imgAlt;
+              a.style.display = 'none';
+              document.body.appendChild(a);
+              a.click();
+              window.URL.revokeObjectURL(a.href);
+              document.body.removeChild(a);
+          };
+          xhr.open('GET', imgSrc);
+          xhr.send();
+      });
+  });
 });
