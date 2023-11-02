@@ -4094,3 +4094,34 @@ padding-bottom: 50px;
     margin-bottom: 20px;
   }
 }
+#imageContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+  filter: brightness(100%);
+}
+
+.download-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 3000;
+  cursor: pointer; /* Add cursor property to make it clear the link is clickable */
+}
+
+.image-container:hover .download-link {
+  display: block;
+}
