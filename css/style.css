@@ -1845,6 +1845,14 @@ footer h4:hover{
   object-fit: cover;
   height: 80vh;
 }
+.eventsection-spook-costume-contest{
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/SsJWbs3w/contest.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-fit: cover;
+  height: 80vh;
+}
 .eventsection-schlums-narrenball {
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://dub01pap003files.storage.live.com/y4mEOHF9uGSMhywUEyB-onHxNbQCchq6x6lUby4K5SujQk7DiAISgX4K1iL7FN1Bi-ztjD31-0JsYcPsSZJtNq8CWLESbhdRObp2wTOUx1HM-Y194fg2kHu0VZkQ2Ip5UCmicmPQ1mw6towIoupXKXyL8JiErRu5-g4nBweGXIxObY74tCb2tD5Q-snLF6dVCofL1gePGr87SKGImtsl5VuIA?encodeFailures=1&width=600&height=750') no-repeat center center;
   background-size: cover;
@@ -1870,7 +1878,7 @@ footer h4:hover{
   height: 80vh;
 }
 .eventsection-spook {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/7LK3t8vK/ASP-102-min.jpg') no-repeat center center;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/9MpW5rxC/image.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: local;
   position: relative;
@@ -1926,6 +1934,15 @@ footer h4:hover{
   object-fit: cover;
   height: 80vh;
 }
+.eventsection-blacklightv2 {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/zfjNk8kM/image.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  object-position: top;
+  object-fit: cover;
+  height: 80vh;
+}
 @media only screen and (max-width: 768px){
   .eventsection-schlums {
     height: 70vh;
@@ -1952,6 +1969,12 @@ footer h4:hover{
     height: 70vh;
   }
   .eventsection-underground {
+    height: 70vh;
+  }
+  .eventsection-blacklightv2 {
+    height: 70vh;
+  }
+  .eventsection-spook-costume-contest{
     height: 70vh;
   }
 }
@@ -2566,7 +2589,7 @@ width: 100%;
 }
 .card-footer, .card-header {
   padding: 5px;
-  background-color: #fff;
+  background-color: transparent;
 }
 .mobile-disable{
   display: inherit;
@@ -2727,6 +2750,16 @@ width: 100%;
   background: linear-gradient(37deg, rgb(4, 52, 0) 1%, rgb(76, 0, 43) 100%) !important;
 }
 
+.color-blacklightv2 {
+  background: linear-gradient(37deg, rgb(87, 0, 128) 1%, rgb(139, 0, 152) 100%) !important;
+}
+.color-blacklightv2-2 {
+  background: linear-gradient(37deg, rgb(51, 0, 74) 1%, rgb(65, 0, 71) 100%) !important;
+}
+.color-blacklightv2 .btn:hover{
+  background: linear-gradient(37deg, rgb(51, 0, 74) 1%, rgb(65, 0, 71) 100%) !important;
+}
+
 .blanksection{
   height: 100vh;
 }
@@ -2864,6 +2897,18 @@ width: 100%;
 }
 .single-event{
   width: 500px;
+}
+.single-event-disabled{
+  width: 500px;
+}
+.single-event-disabled img{
+  width: 100%;
+  max-height: 270px;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 5px;
+  filter: grayscale(1);
+  transition: 500ms;
 }
 .single-event img{
   width: 100%;
@@ -4079,6 +4124,10 @@ padding-bottom: 50px;
 .latestevent img{
   max-width: 100%;
   border-radius: 10px;
+  transition: 300ms;
+}
+.latestevent img:hover{
+  filter: brightness(1.5);
 }
 .latestevent .event-content{
 
@@ -4094,6 +4143,7 @@ padding-bottom: 50px;
     margin-bottom: 20px;
   }
 }
+/* Gallery container */
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -4101,26 +4151,44 @@ padding-bottom: 50px;
   max-width: 100%;
   justify-content: center;
 }
-.image-gallery a{
-  max-width: 300px;
+
+/* Individual image links */
+.image-gallery a {
+  max-width: 250px;
 }
-.image-gallery img{
+
+/* Gallery images */
+.image-gallery img {
   width: 100%;
   object-fit: cover;
-  transition: 300ms;
+  transition: transform 0.3s; /* Added property for clarity */
 }
-.image-gallery img:hover{
+
+/* Image hover effect */
+.image-gallery img:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+/* Responsive adjustments for mobile (max-width: 450px) */
+@media (max-width: 450px) {
+  .image-gallery {
+    gap: 5px;
+    max-width: 100%; /* Ensures the gallery adjusts to the viewport width */
+  }
+
   .image-gallery a {
-      width: 100%; /* Single column */
+    max-width: 150px;
   }
 }
+
+
+
+
+
+
 /* Add your CSS styles here */
 .zugroß{
-  
+
 }
 @media only screen and (min-width:768px) {
   .zugroß h3{
