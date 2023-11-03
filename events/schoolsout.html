@@ -96,32 +96,32 @@
       <div class="row">
         <div class="col-xl-5 col-md-12 col-sm-12 col-6">
           <p>
-            <i class="fa-solid fa-location-dot" style="color: #214900;"></i>
+            <i class="fa-solid fa-location-dot" style="color: #003a49;"></i>
             Exclusiv Club, IT
           </p>
         </div>
         <div class="col-xl-5 col-md-12 col-sm-12 col-6">
-          <p><i class="fa-solid fa-calendar-days" style="color: #214900;"></i>
+          <p><i class="fa-solid fa-calendar-days" style="color: #003a49;"></i>
             June 15th, 2023
         </p>
         </div>
         <div class="col-xl-5 col-md-12 col-sm-12 col-6">
-          <p><i class="fa-solid fa-id-card" style="color: #214900;"></i>
+          <p><i class="fa-solid fa-id-card" style="color: #003a49;"></i>
          16+ Event
         </p>
         </div>
         <div class="col-xl-5 col-md-12 col-sm-12 col-6">
-          <p><i class="fa-solid fa-clock" style="color: #214900;"></i>
+          <p><i class="fa-solid fa-clock" style="color: #003a49;"></i>
           21:00 - 4:00
         </p>
         </div>
         <div class="col-xl-5 col-md-12 col-sm-12 col-6">
-        <p><i class="fa-solid fa-tree" style="color: #214900;"></i>
+        <p><i class="fa-solid fa-tree" style="color: #003a49;"></i>
           2500 <a href="../fume/charity.html"><span class="badge badge-success">Learn More</a></span>
         </p>
         </div>
         <div class="col-xl-5 col-md-12 col-sm-12 col-6">
-          <p><i class="fa-solid fa-id-card" style="color: #214900;"></i>
+          <p><i class="fa-solid fa-id-card" style="color: #003a49;"></i>
             ID Card required <a href="../fume/charity.html">
           </p>
           </div>
@@ -156,7 +156,7 @@
         <div class="col-lg-10 mx-auto text-center">
           <h2>Ticket Status</h2>
           <p>Latest Updates of the sales. Grab em'</p>
-          <div class="section-border-tickets"></div>
+          <div class="section-border-tickets color-schoolsout"></div>
         </div>
       </div>
     </div>
@@ -191,7 +191,7 @@
               Ticket Sale Status
             </h3>
             <div class="progress" style="height: 30px;">
-              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">Sold Out!</div>
+              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Not Available!</div>
             </div>
           </div>
         </div>
@@ -224,7 +224,7 @@
               Ticket Sale Status
             </h3>
             <div class="progress" style="height: 30px;">
-              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 96%;" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">96% Sold!</div>
+              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Not Available!</div>
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@
               Ticket Sale Status
             </h3>
             <div class="progress" style="height: 30px;">
-              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80% Sold!</div>
+              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 100%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Not Available!</div>
             </div>
           </div>
         </div>
@@ -1101,12 +1101,12 @@
       </form>
       <script src="../js/fileupload.js"></script>
       <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwnLK2qgS2VJ7qcZ7zlxOJ-R4uaxkP31MJA-xH9awGVQrHNGlPqkTAJZKOb8u_UF2AG/exec'
-        const form = document.forms['NewsletterForm']
+        const scriptURL2 = 'https://script.google.com/macros/s/AKfycbwnLK2qgS2VJ7qcZ7zlxOJ-R4uaxkP31MJA-xH9awGVQrHNGlPqkTAJZKOb8u_UF2AG/exec'
+        const form2 = document.forms['NewsletterForm']
       
         form.addEventListener('submit', e => {
           e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
@@ -1162,19 +1162,41 @@
             </div>
           </div>
           </div>
-        <div class="col-md-6 col-12">
-          <div class="bg-white p-4">
-            <h3>Contact us</h3>
-            <form action="#">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Full name">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Email address">
-              <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
-              <div class="button1">
-                <button style="font-size: 14px" class="btn btn-primary color-schoolsout" type="submit">Send</button>
-              </div>
-            </form>
+          <div class="col-md-6 col-12">
+            <div class="bg-white p-4">
+              <h3>Contact us</h3>
+              <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec" method="POST">
+                <div class="row">
+                  <div class="col-12">
+                    <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name">
+                  </div>
+                  <div class="col-12">
+                    <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address">
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <input type="hidden" style="display:nne;" name="uniqueNumber" id="uniqueNumber">
+                  </div>
+                </div>
+                <div class="button1">
+                  <button style="font-size: 14px" class="btn btn-primary color-schoolsout" type="submit" id="submitButton" disabled>Send</button>
+                </div>
+              </form>
+              <script>
+                const scriptURL3 = 'https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec'; // Update with the URL for Form 2
+                const form3 = document.forms['contactForm'];
+              
+                form3.addEventListener('submit', e => {
+                  e.preventDefault();
+                  fetch(scriptURL3, { method: 'POST', body: new FormData(form3) })
+                    .then(response => console.log('Success Form 3!', response))
+                    .catch(error => console.error('Error Form 3!', error.message));
+                });
+              </script>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
