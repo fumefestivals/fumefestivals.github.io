@@ -4123,6 +4123,9 @@ padding-bottom: 50px;
 }
 .latestevent img{
   max-width: 100%;
+  width: 100%; 
+  max-height: 250px; 
+  object-fit: cover;
   border-radius: 10px;
   transition: 300ms;
 }
