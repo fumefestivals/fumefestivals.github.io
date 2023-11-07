@@ -4199,3 +4199,24 @@ padding-bottom: 50px;
     font-size: 24px;
   }
 }
+/* Style the .single-event container */
+.single-event {
+  position: relative;
+}
+
+/* Style the event image container */
+.event-image {
+  position: relative;
+}
+
+/* Style the "closed" badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1; /* Ensure the badge is on top of the image */
+}
