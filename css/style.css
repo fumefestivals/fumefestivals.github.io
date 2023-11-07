@@ -2660,6 +2660,16 @@ width: 100%;
   background: linear-gradient(37deg, rgb(0, 107, 60) 1%, rgb(168, 64, 0) 100%) !important;
 }
 
+.color-ogtickets {
+  background: linear-gradient(37deg, rgb(48, 48, 48) 1%, rgb(116, 116, 116) 100%) !important;
+}
+.color-ogtickets-2 {
+  background: linear-gradient(37deg, rgb(35, 35, 35)1%, rgb(69, 69, 69) 100%) !important;
+}
+.color-ogtickets .btn:hover{
+  background: linear-gradient(37deg, rgb(35, 35, 35)1%, rgb(69, 69, 69) 100%) !important;
+}
+
 .color-schlums-narrenball {
   background: linear-gradient(37deg, rgb(182, 0, 70) 1%, rgb(0, 200, 176) 100%) !important;
 }
