@@ -4210,10 +4210,12 @@ padding-bottom: 50px;
 }
 
 /* Style the "closed" badge */
-.badge {
+.badge-closed {
   position: absolute;
   top: 10px;
   left: 10px;
+  font-size: 12px;
+  font-weight: 600;
   background-color: red;
   color: white;
   padding: 5px 10px;
