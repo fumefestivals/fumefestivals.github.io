@@ -121,7 +121,68 @@
         </div>
     </div>
   </section>
-
+  <section class="newsletter" style="background-color: #efefef;">
+    <div class="custom-shape-divider-top-1680561536">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+  </div>
+    <div class="specialstitle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 style="line-height: 60px;">Fumeletter</h2>
+            <div class="fumeletter-subtitle">
+              <p>
+                Join the Fume Community for Exclusive Updates!
+              </p>
+            </div>
+            <p style="font-size: 12px;">Stay in the loop with Fume by subscribing to our newsletter. Get the freshest news, product updates, exclusive offers, and more, all sent directly to your inbox. Don't miss out on exciting developments – become part of our community today!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="innersection">
+        <form method="POST" name="NewsletterForm">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <input type="Email" style="background-color: transparent;" class="form-control" id="Email" name="Email" aria-describedby="Email" required placeholder="Email Adress">
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-button align-items-center d-flex">
+                <button type="submit" id="newsletterButton" name="myButton" class="color-blacklightv2"><span class="button__text">Subscribe</span></button>
+                </div>
+            </div>
+          </div>
+        </form>
+        <script src="../js/fileupload.js"></script>
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbwnLK2qgS2VJ7qcZ7zlxOJ-R4uaxkP31MJA-xH9awGVQrHNGlPqkTAJZKOb8u_UF2AG/exec'
+          const form = document.forms['NewsletterForm']
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
+        <div class="newsletter-information" style="width: 100%;">
+          <p>By providing your email address, you're signing up to receive exciting updates about the finest events happening in the valley. We promise not to flood your inbox—our emails will be occasional and packed with valuable insights.
+            Worried about commitment? Don't be! You can opt out at any time with just a simple click on the unsubscribe link in the footer of our emails.
+            Rest assured, your privacy is paramount to us. We will never share your email with any third parties, because your trust matters.
+            For a detailed understanding of how we handle your data, please take a moment to review our <a href="legal/privacy-policy.html" style="color: rgb(161, 80, 0);">Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="bg-fume position-relative" id="contact">
     <div class="sectionfooter">
       <div class="container">

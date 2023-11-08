@@ -4232,3 +4232,49 @@ padding-bottom: 50px;
   border-radius: 5px;
   z-index: 1; /* Ensure the badge is on top of the image */
 }
+.badge-open {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1; /* Ensure the badge is on top of the image */
+}
+.administration-box{
+  background-color: #d3d2d2;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: right;
+  transition: 300ms;
+}
+.administration-box:hover{
+  filter: brightness(1.1);
+}
+.administration-box p{
+  color: #000;
+}
+@media only screen and (max-width:768px){
+  .administration-box{
+    text-align: center;
+    padding-top: 20px
+  }
+  .administration-box p{
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+.comingsoon-inner{
+  background-color: #cacaca;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.comingsoon-inner h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
