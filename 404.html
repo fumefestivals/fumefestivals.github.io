@@ -128,19 +128,41 @@
               </div>
             </div>
             </div>
-          <div class="col-md-6 col-12">
-            <div class="bg-white p-4">
-              <h3>Contact us</h3>
-              <form action="#">
-                <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Full name">
-                <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Email address">
-                <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
-                <div class="button1">
-                  <button style="font-size: 14px" class="btn btn-primary" type="submit">Send</button>
-                </div>
-              </form>
+            <div class="col-md-6 col-12">
+              <div class="bg-white p-4">
+                <h3>Contact us</h3>
+                <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec" method="POST">
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name">
+                    </div>
+                    <div class="col-12">
+                      <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address">
+                    </div>
+                    <div class="col-12">
+                      <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <input type="hidden" style="display:nne;" name="uniqueNumber" id="uniqueNumber">
+                    </div>
+                  </div>
+                  <div class="button1">
+                    <button style="font-size: 14px" class="btn btn-primary" type="submit" id="submitButton" disabled>Send</button>
+                  </div>
+                </form>
+                <script>
+                  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec'; // Update with the URL for Form 2
+                  const form2 = document.forms['contactForm'];
+                
+                  form2.addEventListener('submit', e => {
+                    e.preventDefault();
+                    fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
+                      .then(response => console.log('Success Form 2!', response))
+                      .catch(error => console.error('Error Form 2!', error.message));
+                  });
+                </script>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
