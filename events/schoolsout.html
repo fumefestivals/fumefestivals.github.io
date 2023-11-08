@@ -1109,12 +1109,12 @@
       </form>
       <script src="../js/fileupload.js"></script>
       <script>
-        const scriptURL2 = 'https://script.google.com/macros/s/AKfycbwnLK2qgS2VJ7qcZ7zlxOJ-R4uaxkP31MJA-xH9awGVQrHNGlPqkTAJZKOb8u_UF2AG/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwnLK2qgS2VJ7qcZ7zlxOJ-R4uaxkP31MJA-xH9awGVQrHNGlPqkTAJZKOb8u_UF2AG/exec'
         const form2 = document.forms['NewsletterForm']
       
-        form.addEventListener('submit', e => {
+        form2.addEventListener('submit', e => {
           e.preventDefault()
-          fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
