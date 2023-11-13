@@ -2371,6 +2371,7 @@ font-size: 20px;
   padding: 10px 40px;
   border-radius: 10px;
   margin-bottom: 20px;
+  position: relative;
 }
 @media only screen and (max-width: 768px){
   .mainstage,
@@ -4144,7 +4145,7 @@ padding-bottom: 50px;
 .latestevent img{
   max-width: 100%;
   width: 100%; 
-  max-height: 250px; 
+  max-height: 300px; 
   object-fit: cover;
   border-radius: 10px;
   transition: 300ms;
@@ -4287,4 +4288,14 @@ padding-bottom: 50px;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 600;
+}
+  .hosted-badge {
+    position: absolute;
+    top: -10px; /* Adjust the top position to control how much it sticks out */
+    left: -10px; /* Adjust the left position to control how much it sticks out */
+    background-color: #f31212; /* Choose your desired background color */
+    color: #ffffff; /* Choose your desired text color */
+    font-weight: 600;
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
