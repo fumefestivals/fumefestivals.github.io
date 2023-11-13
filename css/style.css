@@ -2581,8 +2581,18 @@ width: 100%;
 }
 @media only screen and (max-width: 450px){
   .partners img{
-  width: 150px;
+  max-height: 50px;
 }
+}
+.partner-showcase{
+  width: 200px;
+}
+.partner-showcase img{
+  width: 100%;
+  transition: 300ms;
+}
+.partner-showcase img:hover{
+  transform: scale(0.8);
 }
 .eventartists{
   overflow-x: hidden !important;
