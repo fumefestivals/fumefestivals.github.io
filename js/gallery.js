@@ -1,4 +1,4 @@
-
+// Lazy load images
 function lazyLoadImages(container) {
   const io = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
@@ -16,34 +16,33 @@ function lazyLoadImages(container) {
   });
 }
 
+// Download images on click
+document.addEventListener("DOMContentLoaded", function () {
+  const imageLinks = document.querySelectorAll(".image-gallery a");
+  imageLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const imgSrc = link.querySelector("img").getAttribute("data-src");
+      const imgAlt = link.querySelector("img").getAttribute("alt");
+
+      fetch(imgSrc)
+        .then(response => response.blob())
+        .then(blob => {
+          const a = document.createElement('a');
+          a.href = window.URL.createObjectURL(blob);
+          a.download = imgAlt;
+          a.style.display = 'none';
+          document.body.appendChild(a);
+          a.click();
+          window.URL.revokeObjectURL(a.href);
+          document.body.removeChild(a);
+        });
+    });
+  });
+});
+
 // Select the container with the class "image-gallery" and ID "gallery"
 const imageGallery = document.getElementById('gallery');
 
 // Lazy load all images inside the container
 lazyLoadImages(imageGallery);
-
-document.addEventListener("DOMContentLoaded", function () {
-  const imageLinks = document.querySelectorAll(".image-gallery a");
-  imageLinks.forEach(function (link) {
-      link.addEventListener("click", function (e) {
-          e.preventDefault(); // Prevent the default behavior of the link
-          const imgSrc = link.querySelector("img").getAttribute("data-src");
-          const imgAlt = link.querySelector("img").getAttribute("alt");
-
-          const xhr = new XMLHttpRequest();
-          xhr.responseType = 'blob';
-          xhr.onload = function () {
-              const a = document.createElement('a');
-              a.href = window.URL.createObjectURL(xhr.response);
-              a.download = imgAlt;
-              a.style.display = 'none';
-              document.body.appendChild(a);
-              a.click();
-              window.URL.revokeObjectURL(a.href);
-              document.body.removeChild(a);
-          };
-          xhr.open('GET', imgSrc);
-          xhr.send();
-      });
-  });
-});
