@@ -16,30 +16,33 @@ function lazyLoadImages(container) {
   });
 }
 
-// Download images on click
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const imageLinks = document.querySelectorAll(".image-gallery a");
-  imageLinks.forEach(function (link) {
-    link.addEventListener("click", function (e) {
+  imageLinks.forEach(link => {
+    link.addEventListener("click", e => {
       e.preventDefault();
-      const imgSrc = link.querySelector("img").getAttribute("data-src");
-      const imgAlt = link.querySelector("img").getAttribute("alt");
+      const img = link.querySelector("img");
+      const imgSrc = img.getAttribute("data-full-src") || img.getAttribute("data-src");
+      const imgAlt = img.getAttribute("alt");
 
       fetch(imgSrc)
         .then(response => response.blob())
         .then(blob => {
           const a = document.createElement('a');
-          a.href = window.URL.createObjectURL(blob);
+          const url = window.URL.createObjectURL(blob);
+          a.href = url;
           a.download = imgAlt;
           a.style.display = 'none';
           document.body.appendChild(a);
           a.click();
-          window.URL.revokeObjectURL(a.href);
+          window.URL.revokeObjectURL(url);
           document.body.removeChild(a);
         });
     });
   });
 });
+
+
 
 // Select the container with the class "image-gallery" and ID "gallery"
 const imageGallery = document.getElementById('gallery');
