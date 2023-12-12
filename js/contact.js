@@ -4,7 +4,7 @@ function generateUniqueNumber() {
 }
 
 // Set the value of the "uniqueNumber" input field when the page loads
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const uniqueNumber = generateUniqueNumber();
   document.getElementById('uniqueNumber').value = uniqueNumber;
 });
@@ -28,24 +28,32 @@ function handleSubmit(event) {
   // Get the unique number from the input field
   const uniqueNumber = document.getElementById('uniqueNumber').value;
 
-  // Send the form data to the Google Apps Script
-  const formData = new FormData(document.getElementById('contactForm'));
-  fetch('https://script.google.com/macros/s/AKfycbyw68vyQYAf6yvYoNw5dt0HNHUbeWz6-k02vzpIiPhQTqzreFl9zviX6EBaV85DFRs/exec', {
-    method: 'POST',
-    body: formData
-  })
-    .then(response => {
-      // Handle the response as needed
-      console.log('Success!', response);
-      submitButton.innerHTML = `Thanks for contacting us: Your Case ID: ${uniqueNumber}`;
-      submitButton.style.background = 'green';
-      submitButton.style.color = 'white'; // Set text color to white for visibility
-    })
-    .catch(error => {
-      console.error('Error!', error.message);
-      submitButton.innerHTML = 'Error occurred';
-      submitButton.style.background = 'red';
+  // Get reCAPTCHA token
+  grecaptcha.ready(function () {
+    grecaptcha.execute('YOUR_RECAPTCHA_SITE_KEY', { action: 'submit' }).then(function (token) {
+      // Add the reCAPTCHA token to the form data
+      const formData = new FormData(document.getElementById('contactForm'));
+      formData.append('recaptchaToken', token);
+
+      // Send the form data to the Google Apps Script
+      fetch('https://script.google.com/macros/s/AKfycbyw68vyQYAf6yvYoNw5dt0HNHUbeWz6-k02vzpIiPhQTqzreFl9zviX6EBaV85DFRs/exec', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => {
+          // Handle the response as needed
+          console.log('Success!', response);
+          submitButton.innerHTML = `Thanks for contacting us: Your Case ID: ${uniqueNumber}`;
+          submitButton.style.background = 'green';
+          submitButton.style.color = 'white'; // Set text color to white for visibility
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          submitButton.innerHTML = 'Error occurred';
+          submitButton.style.background = 'red';
+        });
     });
+  });
 }
 
 // Add event listener for form submission
@@ -68,6 +76,13 @@ function checkForm() {
 
 // Add event listeners to input fields to check the form status
 const formInputs = document.querySelectorAll('input, textarea');
-formInputs.forEach(function(input) {
+formInputs.forEach(function (input) {
   input.addEventListener('input', checkForm);
 });
+
+// Include reCAPTCHA script
+const recaptchaScript = document.createElement('script');
+recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6Lctfy4pAAAAAP6FXMS3Z_PX547erCLHCXcpWtip';
+recaptchaScript.async = true;
+recaptchaScript.defer = true;
+document.body.appendChild(recaptchaScript);
