@@ -44,7 +44,7 @@ function handleSubmit(event) {
           // Handle the response as needed
           console.log('Success!', response);
           // Update the button text to "Thanks for contacting us..."
-          submitButton.innerHTML = `Thanks for contacting us: Your Case ID: ${uniqueNumber}`;
+          submitButton.innerHTML = `Thanks for contacting us: Check your Mails!`;
           submitButton.style.background = 'green';
           submitButton.style.color = 'white'; // Set text color to white for visibility
         })
