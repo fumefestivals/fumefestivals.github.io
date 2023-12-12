@@ -43,12 +43,14 @@ function handleSubmit(event) {
         .then(response => {
           // Handle the response as needed
           console.log('Success!', response);
+          // Update the button text to "Thanks for contacting us..."
           submitButton.innerHTML = `Thanks for contacting us: Your Case ID: ${uniqueNumber}`;
           submitButton.style.background = 'green';
           submitButton.style.color = 'white'; // Set text color to white for visibility
         })
         .catch(error => {
           console.error('Error!', error.message);
+          // Update the button text to 'Error occurred'
           submitButton.innerHTML = 'Error occurred';
           submitButton.style.background = 'red';
         });
@@ -82,7 +84,7 @@ formInputs.forEach(function (input) {
 
 // Include reCAPTCHA script
 const recaptchaScript = document.createElement('script');
-recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6Lctfy4pAAAAAP6FXMS3Z_PX547erCLHCXcpWtip';
+recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY';
 recaptchaScript.async = true;
 recaptchaScript.defer = true;
 document.body.appendChild(recaptchaScript);
