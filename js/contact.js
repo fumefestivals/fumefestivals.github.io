@@ -30,7 +30,7 @@ function handleSubmit(event) {
 
   // Get reCAPTCHA token
   grecaptcha.ready(function () {
-    grecaptcha.execute('YOUR_RECAPTCHA_SITE_KEY', { action: 'submit' }).then(function (token) {
+    grecaptcha.execute('6Lctfy4pAAAAAP6FXMS3Z_PX547erCLHCXcpWtip', { action: 'submit' }).then(function (token) {
       // Add the reCAPTCHA token to the form data
       const formData = new FormData(document.getElementById('contactForm'));
       formData.append('recaptchaToken', token);
@@ -84,7 +84,7 @@ formInputs.forEach(function (input) {
 
 // Include reCAPTCHA script
 const recaptchaScript = document.createElement('script');
-recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY';
+recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6Lctfy4pAAAAAP6FXMS3Z_PX547erCLHCXcpWtip';
 recaptchaScript.async = true;
 recaptchaScript.defer = true;
 document.body.appendChild(recaptchaScript);
