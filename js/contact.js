@@ -1,15 +1,3 @@
-const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec';
-const form2 = document.forms['contactForm'];
-
-form2.addEventListener('submit', e => {
-  e.preventDefault();
-  fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
-    .then(response => console.log('Success Form 2!', response))
-    .catch(error => console.error('Error Form 2!', error.message));
-});
-
-// contact.js
-
 // Function to generate a unique number
 function generateUniqueNumber() {
   return 'F-' + (Math.floor(100000000 + Math.random() * 900000000));
@@ -37,9 +25,6 @@ function handleSubmit(event) {
   // Update the button text to "Sending..."
   submitButton.innerHTML = 'Sending...';
 
-  // Get the unique number from the input field
-  const uniqueNumber = document.getElementById('uniqueNumber').value;
-
   // Get reCAPTCHA token
   grecaptcha.ready(function () {
     grecaptcha.execute('6Lctfy4pAAAAAP6FXMS3Z_PX547erCLHCXcpWtip', { action: 'submit' }).then(function (token) {
@@ -48,8 +33,8 @@ function handleSubmit(event) {
       formData.append('recaptchaToken', token);
 
       // Send the form data to the Google Apps Script
-      const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyw68vyQYAf6yvYoNw5dt0HNHUbeWz6-k02vzpIiPhQTqzreFl9zviX6EBaV85DFRs/exec';
-      fetch(scriptURL2, {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyw68vyQYAf6yvYoNw5dt0HNHUbeWz6-k02vzpIiPhQTqzreFl9zviX6EBaV85DFRs/exec';
+      fetch(scriptURL, {
         method: 'POST',
         body: formData
       })

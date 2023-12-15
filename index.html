@@ -1072,16 +1072,16 @@
             <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec" method="POST">
               <div class="row">
                 <div class="col-12">
-                  <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name">
+                  <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name" required>
                 </div>
                 <div class="col-12">
-                  <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address">
+                  <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address" required>
                 </div>
                 <div class="col-12">
-                  <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
+                  <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message" required></textarea>
                 </div>
                 <div class="col-12">
-                  <input type="hidden" style="display:none;" name="uniqueNumber" id="uniqueNumber">
+                  <input type="hidden" name="uniqueNumber" id="uniqueNumber">
                 </div>
               </div>
               <div class="button1">
@@ -1089,6 +1089,7 @@
                 <span id="errorText" style="color: red;"></span>
               </div>
             </form>
+            
           </div>
         </div>
       </div>
