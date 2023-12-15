@@ -75,16 +75,19 @@ function handleSubmit(event) {
 document.getElementById('contactForm').addEventListener('submit', handleSubmit);
 
 // Function to check if all input fields are filled, including reCAPTCHA
-function checkForm(token) {
+function checkForm() {
   const fullName = document.getElementById('fullName').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
   const submitButton = document.getElementById('submitButton');
+  const errorText = document.getElementById('errorText');
 
-  if (fullName.trim() !== '' && email.trim() !== '' && message.trim() !== '' && token) {
+  if (fullName.trim() !== '' && email.trim() !== '' && message.trim() !== '' && grecaptcha.getResponse()) {
     submitButton.removeAttribute('disabled');
+    errorText.innerHTML = ''; // Clear error message
   } else {
     submitButton.disabled = true;
+    errorText.innerHTML = 'Please fill out all fields and verify reCAPTCHA.'; // Display error message
   }
 }
 
@@ -93,10 +96,3 @@ const formInputs = document.querySelectorAll('input, textarea');
 formInputs.forEach(function (input) {
   input.addEventListener('input', checkForm);
 });
-
-// Include reCAPTCHA script
-const recaptchaScript = document.createElement('script');
-recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=6Lctfy4pAAAAAP6FXMS3Z_PX547erCLHCXcpWtip';
-recaptchaScript.async = true;
-recaptchaScript.defer = true;
-document.body.appendChild(recaptchaScript);
