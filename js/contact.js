@@ -82,12 +82,13 @@ function checkForm() {
   const submitButton = document.getElementById('submitButton');
   const errorText = document.getElementById('errorText');
 
-  if (fullName.trim() !== '' && email.trim() !== '' && message.trim() !== '' && grecaptcha.getResponse()) {
+  if (fullName.trim() !== '' && email.trim() !== '' && message.trim() !== '') {
+    // You may add additional conditions based on your scoring threshold if needed
     submitButton.removeAttribute('disabled');
     errorText.innerHTML = ''; // Clear error message
   } else {
     submitButton.disabled = true;
-    errorText.innerHTML = 'Please fill out all fields and verify reCAPTCHA.'; // Display error message
+    errorText.innerHTML = 'Please fill out all fields.'; // Display error message
   }
 }
 
