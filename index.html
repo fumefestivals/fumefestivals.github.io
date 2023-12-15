@@ -1072,33 +1072,27 @@
             <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec" method="POST">
               <div class="row">
                 <div class="col-12">
-                  <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name">
+                  <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name" required>
                 </div>
                 <div class="col-12">
-                  <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address">
+                  <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address" required>
                 </div>
                 <div class="col-12">
-                  <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
+                  <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message" required></textarea>
                 </div>
                 <div class="col-12">
-                  <input type="hidden" style="display:nne;" name="uniqueNumber" id="uniqueNumber">
+                  <!-- Add the reCAPTCHA field -->
+                  <div class="g-recaptcha" data-sitekey="6Lctfy4pAAAAAP6FXMS3Z_PX547erCLHCXcpWtip"></div>
+                </div>
+                <div class="col-12">
+                  <input type="hidden" style="display:none;" name="uniqueNumber" id="uniqueNumber">
                 </div>
               </div>
               <div class="button1">
                 <button style="font-size: 14px" class="btn btn-primary" type="submit" id="submitButton" disabled>Send</button>
               </div>
             </form>
-            <script>
-              const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec'; // Update with the URL for Form 2
-              const form2 = document.forms['contactForm'];
             
-              form2.addEventListener('submit', e => {
-                e.preventDefault();
-                fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
-                  .then(response => console.log('Success Form 2!', response))
-                  .catch(error => console.error('Error Form 2!', error.message));
-              });
-            </script>
           </div>
         </div>
       </div>
@@ -1147,6 +1141,7 @@
 <!-- google map -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
 <script src="plugins/google-map/gmap.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lctfy4pAAAAAP6FXMS3Z_PX547erCLHCXcpWtip" async defer></script>
 
 <script src="js/contact.js"></script>
 <!-- Main Script -->
