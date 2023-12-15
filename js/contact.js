@@ -1,3 +1,15 @@
+const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec';
+const form2 = document.forms['contactForm'];
+
+form2.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
+    .then(response => console.log('Success Form 2!', response))
+    .catch(error => console.error('Error Form 2!', error.message));
+});
+
+// contact.js
+
 // Function to generate a unique number
 function generateUniqueNumber() {
   return 'F-' + (Math.floor(100000000 + Math.random() * 900000000));
@@ -36,7 +48,8 @@ function handleSubmit(event) {
       formData.append('recaptchaToken', token);
 
       // Send the form data to the Google Apps Script
-      fetch('https://script.google.com/macros/s/AKfycbyw68vyQYAf6yvYoNw5dt0HNHUbeWz6-k02vzpIiPhQTqzreFl9zviX6EBaV85DFRs/exec', {
+      const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyw68vyQYAf6yvYoNw5dt0HNHUbeWz6-k02vzpIiPhQTqzreFl9zviX6EBaV85DFRs/exec';
+      fetch(scriptURL2, {
         method: 'POST',
         body: formData
       })
@@ -59,18 +72,16 @@ function handleSubmit(event) {
 }
 
 // Add event listener for form submission
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', handleSubmit);
+document.getElementById('contactForm').addEventListener('submit', handleSubmit);
 
 // Function to check if all input fields are filled, including reCAPTCHA
-function checkForm() {
+function checkForm(token) {
   const fullName = document.getElementById('fullName').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
-  const reCAPTCHAToken = document.getElementById('recaptchaToken').value;
   const submitButton = document.getElementById('submitButton');
 
-  if (fullName.trim() !== '' && email.trim() !== '' && message.trim() !== '' && reCAPTCHAToken.trim() !== '') {
+  if (fullName.trim() !== '' && email.trim() !== '' && message.trim() !== '' && token) {
     submitButton.removeAttribute('disabled');
   } else {
     submitButton.disabled = true;
