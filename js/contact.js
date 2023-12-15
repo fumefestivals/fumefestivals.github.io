@@ -62,14 +62,15 @@ function handleSubmit(event) {
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', handleSubmit);
 
-// Function to check if all input fields are filled
+// Function to check if all input fields are filled, including reCAPTCHA
 function checkForm() {
   const fullName = document.getElementById('fullName').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
+  const reCAPTCHAToken = document.getElementById('recaptchaToken').value;
   const submitButton = document.getElementById('submitButton');
 
-  if (fullName.trim() !== '' && email.trim() !== '' && message.trim() !== '') {
+  if (fullName.trim() !== '' && email.trim() !== '' && message.trim() !== '' && reCAPTCHAToken.trim() !== '') {
     submitButton.removeAttribute('disabled');
   } else {
     submitButton.disabled = true;
