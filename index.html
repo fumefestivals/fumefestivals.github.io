@@ -1071,24 +1071,26 @@
             <h3>Contact us</h3>
             <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyzG8wNb0K1Ekgl7SDozph985UAJNnWyCtF-oblXAlQmMPVnkjYjZR5gWsRkhRjDJSb/exec" method="POST">
               <div class="row">
-                <div class="col-12">
-                  <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name" required>
-                </div>
-                <div class="col-12">
-                  <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address" required>
-                </div>
-                <div class="col-12">
-                  <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message" required></textarea>
-                </div>
-                <div class="col-12">
-                  <input type="hidden" name="uniqueNumber" id="uniqueNumber">
-                </div>
+                  <div class="col-12">
+                      <input type="text" id="fullName" name="fullName" class="form-control mb-4 px-0" placeholder="Full name" required>
+                  </div>
+                  <div class="col-12">
+                      <input type="email" id="email" name="email" class="form-control mb-4 px-0" placeholder="Email address" required>
+                  </div>
+                  <div class="col-12">
+                      <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="col-12">
+                      <input type="hidden" name="uniqueNumber" id="uniqueNumber">
+                      <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
+                  </div>
               </div>
+
               <div class="button1">
-                <button style="font-size: 14px" class="btn btn-primary" type="submit" id="submitButton" disabled>Send</button>
-                <span id="errorText" style="color: red;"></span>
+                  <button style="font-size: 14px" class="btn btn-primary" type="button" id="submitButton" disabled onclick="submitForm()">Send</button>
+                  <span id="errorText" style="color: red;"></span>
               </div>
-            </form>
+          </form>
             
           </div>
         </div>
