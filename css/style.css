@@ -309,7 +309,7 @@ img {
 
 a {
   color: #fff;
-  weight 600;
+  font-weight: 600;
 }
 
 a,
@@ -512,13 +512,20 @@ a:hover {
    ###########################################################
 */
 .socialsection {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/jq9Zs2GB/ASP-141.jpg') no-repeat center center;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/MKhLWkVm/Social-Section-min.jpg') no-repeat center center;
   background-position: center;
   object-fit: cover;
   background-size: cover;
 }
-.social-container{
+@media only screen and (max-width:768px){
+  .socialsection {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.5) ), url('https://i.postimg.cc/FzkxqRW5/Socialcontainer-Mobile-min.jpg') no-repeat center center;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+  }
 }
+
 .instafeed{
   width: 100%;
   padding-bottom: 70px;
